@@ -24,69 +24,48 @@
 
 ---
 
-## 단계별 필수 문제 체크리스트 (25일 플랜)
+## 일자별 신규 문제 체크리스트
 
-문제는 대부분 [고득점 Kit](https://school.programmers.co.kr/learn/challenges?tab=algorithm_practice_kit)에 유형별로 묶여 있습니다.
+**하루 5문제 = 복습 2 + 신규 3.**
+아래는 **신규 3문제**만. 복습 2문제는 [CLAUDE.md §4 복습 풀](../CLAUDE.md)에서 고릅니다.
 
-### 1단계 (9/29~10/2) 구현·완전탐색 — 8문제
-- [ ] [두 개 뽑아서 더하기](https://school.programmers.co.kr/learn/courses/30/lessons/68644) Lv.1
-- [ ] [최소직사각형](https://school.programmers.co.kr/learn/courses/30/lessons/86491) Lv.1
-- [ ] [모의고사](https://school.programmers.co.kr/learn/courses/30/lessons/42840) Lv.1 ★
-- [ ] [덧칠하기](https://school.programmers.co.kr/learn/courses/30/lessons/161989) Lv.1
-- [ ] [키패드 누르기](https://school.programmers.co.kr/learn/courses/30/lessons/67256) Lv.1 — 구현
-- [ ] [카펫](https://school.programmers.co.kr/learn/courses/30/lessons/42842) Lv.2 ★
-- [ ] [소수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/42839) Lv.2 — 순열 ★
-- [ ] [피로도](https://school.programmers.co.kr/learn/courses/30/lessons/87946) Lv.2 — 백트래킹 ★
+### 1단계 (9/29~10/2) 구현·완전탐색
+- **9/29 화** ✅ — [두 개 뽑아서 더하기](https://school.programmers.co.kr/learn/courses/30/lessons/68644) / [모의고사](https://school.programmers.co.kr/learn/courses/30/lessons/42840) / [최소직사각형](https://school.programmers.co.kr/learn/courses/30/lessons/86491)
+- [ ] **9/30 수** — [덧칠하기](https://school.programmers.co.kr/learn/courses/30/lessons/161989) / [키패드 누르기](https://school.programmers.co.kr/learn/courses/30/lessons/67256)★ / [공원 산책](https://school.programmers.co.kr/learn/courses/30/lessons/172928)
+- [ ] **10/1 목** — [카펫](https://school.programmers.co.kr/learn/courses/30/lessons/42842) / [소수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/42839)★ / [할인 행사](https://school.programmers.co.kr/learn/courses/30/lessons/131127)
+- [ ] **10/2 금** — [피로도](https://school.programmers.co.kr/learn/courses/30/lessons/87946)★ / [전력망을 둘로 나누기](https://school.programmers.co.kr/learn/courses/30/lessons/86971) / [행렬 테두리 회전하기](https://school.programmers.co.kr/learn/courses/30/lessons/77485)
 
-### 2단계 (10/3~10/6) 정렬·해시·스택/큐/힙 — 10문제
-- [ ] [완주하지 못한 선수](https://school.programmers.co.kr/learn/courses/30/lessons/42576) Lv.1 ★
-- [ ] [K번째수](https://school.programmers.co.kr/learn/courses/30/lessons/42748) Lv.1
-- [ ] [같은 숫자는 싫어](https://school.programmers.co.kr/learn/courses/30/lessons/12906) Lv.1
-- [ ] [전화번호 목록](https://school.programmers.co.kr/learn/courses/30/lessons/42577) Lv.2
-- [ ] [의상](https://school.programmers.co.kr/learn/courses/30/lessons/42578) Lv.2 ★
-- [ ] [가장 큰 수](https://school.programmers.co.kr/learn/courses/30/lessons/42746) Lv.2 ★
-- [ ] [H-Index](https://school.programmers.co.kr/learn/courses/30/lessons/42747) Lv.2
-- [ ] [올바른 괄호](https://school.programmers.co.kr/learn/courses/30/lessons/12909) Lv.2 ★
-- [ ] [기능개발](https://school.programmers.co.kr/learn/courses/30/lessons/42586) Lv.2
-- [ ] [더 맵게](https://school.programmers.co.kr/learn/courses/30/lessons/42626) Lv.2 ★
+### 2단계 (10/3~10/6) 정렬·해시·스택큐
+- [ ] **10/3 토** — [K번째수](https://school.programmers.co.kr/learn/courses/30/lessons/42748) / [문자열 내 마음대로 정렬하기](https://school.programmers.co.kr/learn/courses/30/lessons/12915) / [가장 큰 수](https://school.programmers.co.kr/learn/courses/30/lessons/42746)★
+- [ ] **10/4 일** — [완주하지 못한 선수](https://school.programmers.co.kr/learn/courses/30/lessons/42576)★ / [폰켓몬](https://school.programmers.co.kr/learn/courses/30/lessons/1845) / [의상](https://school.programmers.co.kr/learn/courses/30/lessons/42578)★
+- [ ] **10/5 월** — [같은 숫자는 싫어](https://school.programmers.co.kr/learn/courses/30/lessons/12906) / [올바른 괄호](https://school.programmers.co.kr/learn/courses/30/lessons/12909)★ / [기능개발](https://school.programmers.co.kr/learn/courses/30/lessons/42586)
+- [ ] **10/6 화** 복습일 — [더 맵게](https://school.programmers.co.kr/learn/courses/30/lessons/42626)★ **(신규 1) + 복습 4**
 
-### 3단계 (10/7~10/14) BFS/DFS ★★ — 12문제 + 도전 2
-- [ ] [타겟 넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165) Lv.2 ★
-- [ ] [카카오프렌즈 컬러링북](https://school.programmers.co.kr/learn/courses/30/lessons/1829) Lv.2
-- [ ] [무인도 여행](https://school.programmers.co.kr/learn/courses/30/lessons/154540) Lv.2 ★
-- [ ] [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844) Lv.2 ★★★ **최우선**
-- [ ] [미로 탈출](https://school.programmers.co.kr/learn/courses/30/lessons/159993) Lv.2 ★
-- [ ] [리코쳇 로봇](https://school.programmers.co.kr/learn/courses/30/lessons/169199) Lv.2
-- [ ] [전력망을 둘로 나누기](https://school.programmers.co.kr/learn/courses/30/lessons/86971) Lv.2
-- [ ] [네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162) Lv.3 ★
-- [ ] [단어 변환](https://school.programmers.co.kr/learn/courses/30/lessons/43163) Lv.3 ★
-- [ ] [여행경로](https://school.programmers.co.kr/learn/courses/30/lessons/43164) Lv.3
-- [ ] [가장 먼 노드](https://school.programmers.co.kr/learn/courses/30/lessons/49189) Lv.3 ★
-- [ ] [순위](https://school.programmers.co.kr/learn/courses/30/lessons/49191) Lv.3
-- [ ] (도전) [경주로 건설](https://school.programmers.co.kr/learn/courses/30/lessons/67259) Lv.3
-- [ ] (도전) [아이템 줍기](https://school.programmers.co.kr/learn/courses/30/lessons/87694) Lv.3
+### 3단계 (10/7~10/14) BFS/DFS ★★
+- [ ] **10/7 수** — [네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162)★ / [타겟 넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165)★ / [카카오프렌즈 컬러링북](https://school.programmers.co.kr/learn/courses/30/lessons/1829)
+- [ ] **10/8 목** — [여행경로](https://school.programmers.co.kr/learn/courses/30/lessons/43164) / [단어 변환](https://school.programmers.co.kr/learn/courses/30/lessons/43163)★ / [거리두기 확인하기](https://school.programmers.co.kr/learn/courses/30/lessons/81302)
+- [ ] **10/9 금** — [무인도 여행](https://school.programmers.co.kr/learn/courses/30/lessons/154540)★ / [리코쳇 로봇](https://school.programmers.co.kr/learn/courses/30/lessons/169199) / [퍼즐 조각 채우기](https://school.programmers.co.kr/learn/courses/30/lessons/84021)(도전)
+- [ ] **10/10 토** ★★ — [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844)★★ / [미로 탈출](https://school.programmers.co.kr/learn/courses/30/lessons/159993)★ / [경주로 건설](https://school.programmers.co.kr/learn/courses/30/lessons/67259)(도전)
+- [ ] **10/11 일** — [가장 먼 노드](https://school.programmers.co.kr/learn/courses/30/lessons/49189)★ / [순위](https://school.programmers.co.kr/learn/courses/30/lessons/49191) / [아이템 줍기](https://school.programmers.co.kr/learn/courses/30/lessons/87694)
+- [ ] **10/12 월** — [배달](https://school.programmers.co.kr/learn/courses/30/lessons/12978)★ / [합승 택시 요금](https://school.programmers.co.kr/learn/courses/30/lessons/72413)(도전) / [섬 연결하기](https://school.programmers.co.kr/learn/courses/30/lessons/42861)
+- [ ] **10/13 화** — [양과 늑대](https://school.programmers.co.kr/learn/courses/30/lessons/92343)(도전) + 앞에서 못 끝낸 문제 2개
+- [ ] **10/14 수** 복습일 — **신규 없음 · 복습 5 + BFS 템플릿 암기 확인**
 
-### 4단계 (10/15~10/18) 이분탐색·투포인터·그리디 — 10문제
-- [ ] [체육복](https://school.programmers.co.kr/learn/courses/30/lessons/42862) Lv.1 ★
-- [ ] [큰 수 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/42883) Lv.2 ★
-- [ ] [구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885) Lv.2 ★
-- [ ] [조이스틱](https://school.programmers.co.kr/learn/courses/30/lessons/42860) Lv.2
-- [ ] [연속 부분 수열 합의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/131701) Lv.2
-- [ ] [순위 검색](https://school.programmers.co.kr/learn/courses/30/lessons/72412) Lv.2
-- [ ] [단속카메라](https://school.programmers.co.kr/learn/courses/30/lessons/42884) Lv.3 ★★
-- [ ] [보석 쇼핑](https://school.programmers.co.kr/learn/courses/30/lessons/67258) Lv.3 ★
-- [ ] [입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238) Lv.3 ★★
-- [ ] [징검다리 건너기](https://school.programmers.co.kr/learn/courses/30/lessons/64062) Lv.3 ★
+### 4단계 (10/15~10/18) 이분탐색·투포인터·그리디
+- [ ] **10/15 목** — [예산](https://school.programmers.co.kr/learn/courses/30/lessons/12982) / [순위 검색](https://school.programmers.co.kr/learn/courses/30/lessons/72412) / [입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238)★★
+- [ ] **10/16 금** — [징검다리 건너기](https://school.programmers.co.kr/learn/courses/30/lessons/64062)★ / [구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885)★ / [징검다리](https://school.programmers.co.kr/learn/courses/30/lessons/43236)(도전)
+- [ ] **10/17 토** — [연속 부분 수열 합의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/131701) / [숫자 카드 나누기](https://school.programmers.co.kr/learn/courses/30/lessons/135807) / [보석 쇼핑](https://school.programmers.co.kr/learn/courses/30/lessons/67258)★
+- [ ] **10/18 일** 복습일 — [체육복](https://school.programmers.co.kr/learn/courses/30/lessons/42862)★ / [큰 수 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/42883)★ **(신규 2) + 복습 3**
 
-### 5단계 (10/19~10/22) DP — 8문제
-- [ ] [피보나치 수](https://school.programmers.co.kr/learn/courses/30/lessons/12945) Lv.2
-- [ ] [2 x n 타일링](https://school.programmers.co.kr/learn/courses/30/lessons/12900) Lv.2 ★
-- [ ] [멀리 뛰기](https://school.programmers.co.kr/learn/courses/30/lessons/12914) Lv.2
-- [ ] [땅따먹기](https://school.programmers.co.kr/learn/courses/30/lessons/12913) Lv.2 ★★
-- [ ] [정수 삼각형](https://school.programmers.co.kr/learn/courses/30/lessons/43105) Lv.3 ★★
-- [ ] [등굣길](https://school.programmers.co.kr/learn/courses/30/lessons/42898) Lv.3 ★
-- [ ] (도전) [N으로 표현](https://school.programmers.co.kr/learn/courses/30/lessons/42895) Lv.3
-- [ ] (여유시) [배달](https://school.programmers.co.kr/learn/courses/30/lessons/12978) Lv.2 — 다익스트라
+### 5단계 (10/19~10/22) DP·최단경로
+- [ ] **10/19 월** — [피보나치 수](https://school.programmers.co.kr/learn/courses/30/lessons/12945) / [멀리 뛰기](https://school.programmers.co.kr/learn/courses/30/lessons/12914) / [2 x n 타일링](https://school.programmers.co.kr/learn/courses/30/lessons/12900)★
+- [ ] **10/20 화** — [땅따먹기](https://school.programmers.co.kr/learn/courses/30/lessons/12913)★★ / [정수 삼각형](https://school.programmers.co.kr/learn/courses/30/lessons/43105)★★ / [등굣길](https://school.programmers.co.kr/learn/courses/30/lessons/42898)★
+- [ ] **10/21 수** — [조이스틱](https://school.programmers.co.kr/learn/courses/30/lessons/42860) / [단속카메라](https://school.programmers.co.kr/learn/courses/30/lessons/42884)★★ / [N으로 표현](https://school.programmers.co.kr/learn/courses/30/lessons/42895)(도전)
+- [ ] **10/22 목** 복습일 — **신규 없음 · 복습 5**
 
-### 6단계 (10/23) 실전 모의고사 — 2시간 타이머
-- [ ] 안 풀어본 Lv.1 1문제 + Lv.2 2문제 연속으로
+### 6단계 (10/23) 실전 모의고사
+- [ ] 2시간 타이머 — 안 풀어본 Lv.1 + Lv.2 + Lv.2/3 연속
+
+---
+
+> ⚠️ 링크가 404면 Claude에게 알려주세요. 문제 ID를 바로 고칩니다.
