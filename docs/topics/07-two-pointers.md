@@ -101,13 +101,17 @@ area = S[x2+1][y2+1] - S[x1][y2+1] - S[x2+1][y1] + S[x1][y1]
 
 → 실행 코드: [`algo/two_pointers.py`](../../algo/two_pointers.py)
 
-## 추천 문제
+## 추천 문제 (프로그래머스)
 
-| 문제 | 난이도 | 포인트 |
+| 문제 | 레벨 | 포인트 |
 |---|---|---|
-| [BOJ 11659 구간 합 구하기 4](https://www.acmicpc.net/problem/11659) | 실버3 | 누적합 기본 ★ |
-| [BOJ 2018 수들의 합 5](https://www.acmicpc.net/problem/2018) | 실버5 | 투 포인터 입문 ★ |
-| [BOJ 1806 부분합](https://www.acmicpc.net/problem/1806) | 골드4 | 최단 구간 ★★ |
-| [BOJ 2003 수들의 합 2](https://www.acmicpc.net/problem/2003) | 실버4 | 투 포인터 |
-| [BOJ 11660 구간 합 구하기 5](https://www.acmicpc.net/problem/11660) | 실버1 | 2차원 누적합 |
-| [BOJ 2470 두 용액](https://www.acmicpc.net/problem/2470) | 골드5 | 정렬 + 양끝 포인터 ★ |
+| [연속 부분 수열 합의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/131701) | Lv.2 | 원형 배열 + 투포인터 ★ |
+| [숫자 카드 나누기](https://school.programmers.co.kr/learn/courses/30/lessons/135807) | Lv.2 | 수학 + 탐색 |
+| [보석 쇼핑](https://school.programmers.co.kr/learn/courses/30/lessons/67258) | Lv.3 | 슬라이딩 윈도우 최단 구간 ★★ |
+| [구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885) | Lv.2 | 정렬 + 양끝 포인터 ★ |
+
+> **보석 쇼핑**이 이 유형의 대표입니다. "모든 종류를 포함하는 최단 구간" —
+> 창을 늘렸다 줄이는 골격을 여기서 익히면 됩니다.
+>
+> 누적합은 프로그래머스 단독 출제가 드물지만, **다른 문제 안에서 부품으로** 자주 쓰입니다.
+> 개념만 알고 넘어가세요.

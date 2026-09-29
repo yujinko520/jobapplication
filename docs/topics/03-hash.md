@@ -97,13 +97,17 @@ s.add(frozenset(x))  # ✅ set을 키로 쓰고 싶으면 frozenset
 
 > 실행 가능한 코드: [`algo/sorting_hash.py`](../../algo/sorting_hash.py)
 
-## 추천 문제
+## 추천 문제 (프로그래머스)
 
-| 문제 | 난이도 | 포인트 |
+| 문제 | 레벨 | 포인트 |
 |---|---|---|
-| [BOJ 10815 숫자 카드](https://www.acmicpc.net/problem/10815) | 실버5 | set의 위력 체감 ★ |
-| [BOJ 1764 듣보잡](https://www.acmicpc.net/problem/1764) | 실버4 | 교집합 |
-| [BOJ 7785 회사에 있는 사람](https://www.acmicpc.net/problem/7785) | 실버5 | set 추가/삭제 |
-| [프로그래머스 완주하지 못한 선수](https://school.programmers.co.kr/learn/courses/30/lessons/42576) | Lv1 | Counter ★ |
-| [프로그래머스 전화번호 목록](https://school.programmers.co.kr/learn/courses/30/lessons/42577) | Lv2 | 접두사 + 해시 |
-| [프로그래머스 의상](https://school.programmers.co.kr/learn/courses/30/lessons/42578) | Lv2 | 그룹핑 + 경우의 수 |
+| [완주하지 못한 선수](https://school.programmers.co.kr/learn/courses/30/lessons/42576) | Lv.1 | Counter 뺄셈 ★ |
+| [폰켓몬](https://school.programmers.co.kr/learn/courses/30/lessons/1845) | Lv.1 | set으로 종류 세기 |
+| [추억 점수](https://school.programmers.co.kr/learn/courses/30/lessons/176963) | Lv.1 | dict 조회 |
+| [의상](https://school.programmers.co.kr/learn/courses/30/lessons/42578) | Lv.2 | 그룹핑 + 경우의 수 ★★ |
+| [전화번호 목록](https://school.programmers.co.kr/learn/courses/30/lessons/42577) | Lv.2 | set 조회로 O(n) |
+| [오픈채팅방](https://school.programmers.co.kr/learn/courses/30/lessons/42888) | Lv.2 | dict로 최종 상태 추적 ★ |
+| [베스트앨범](https://school.programmers.co.kr/learn/courses/30/lessons/42579) | Lv.3 | 그룹핑 + 다중 정렬 (도전) |
+
+> **의상**은 "무엇을 key로 삼을까"를 스스로 정해야 하는 첫 문제입니다.
+> 해시 문제의 난이도는 자료구조가 아니라 **key 설계**에서 옵니다.

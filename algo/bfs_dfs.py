@@ -77,7 +77,7 @@ def dfs_order_stack(graph: dict[int, list[int]], start: int) -> list[int]:
 
 
 def grid_shortest_path(grid: list[list[int]], start=(0, 0), goal=None) -> int:
-    """격자 최단거리 (BOJ 2178 미로 탐색형). 1=길, 0=벽. 칸 수를 셉니다.
+    """격자 최단거리 (프로그래머스 '게임 맵 최단거리' 형). 1=길, 0=벽. 칸 수를 셉니다.
 
     도달 불가면 -1.
 
@@ -110,7 +110,7 @@ def grid_shortest_path(grid: list[list[int]], start=(0, 0), goal=None) -> int:
 
 
 def count_islands(grid: list[list[int]]) -> int:
-    """연결 요소(덩어리) 개수 — 섬 세기 / 단지번호붙이기 (BOJ 2667형).
+    """연결 요소(덩어리) 개수 — 섬 세기 / 단지번호붙이기 (프로그래머스 '무인도 여행' / '카카오프렌즈 컬러링북' 형).
 
     >>> g = [[1, 1, 0, 0],
     ...      [1, 0, 0, 1],
@@ -142,7 +142,7 @@ def count_islands(grid: list[list[int]]) -> int:
 
 
 def multi_source_bfs(grid: list[list[int]]) -> int:
-    """다중 시작점 BFS — 토마토 익히기 (BOJ 7576형).
+    """다중 시작점 BFS — 토마토 익히기 (여러 지점에서 동시에 퍼지는 확산 문제 형).
 
     1=익은 토마토(시작점), 0=안 익음, -1=빈 칸.
     전부 익는 데 걸리는 일수를 반환. 불가능하면 -1.
@@ -183,7 +183,7 @@ def multi_source_bfs(grid: list[list[int]]) -> int:
 
 
 def bfs_on_numbers(start: int, target: int, limit: int = 100_000) -> int:
-    """격자가 아닌 BFS — 숨바꼭질 (BOJ 1697).
+    """격자가 아닌 BFS — 숨바꼭질 (상태 전이 BFS — 프로그래머스 '단어 변환'과 같은 사고).
 
     x에서 x-1, x+1, 2x 로 이동할 때 target까지 최소 횟수.
 

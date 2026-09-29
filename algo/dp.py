@@ -24,7 +24,7 @@ def climb_stairs(n: int) -> int:
 
 
 def min_steps_to_one(n: int) -> int:
-    """[유형1] 1로 만들기 (BOJ 1463): /3, /2, -1 연산 최소 횟수.
+    """[유형1] 1로 만들기 (연산 최소 횟수 — 1차원 DP의 고전): /3, /2, -1 연산 최소 횟수.
 
     dp[i] = i를 1로 만드는 최소 연산 횟수
 
@@ -46,7 +46,7 @@ def min_steps_to_one(n: int) -> int:
 
 
 def stairs_max_score(scores: list[int]) -> int:
-    """[유형1] 계단 오르기 (BOJ 2579): 연속 3칸은 밟을 수 없음, 마지막 칸 필수.
+    """[유형1] 계단 오르기 (연속 제한이 있는 1차원 DP): 연속 3칸은 밟을 수 없음, 마지막 칸 필수.
 
     dp[i] = i번째 계단을 밟았을 때의 최대 점수
 
@@ -70,7 +70,7 @@ def stairs_max_score(scores: list[int]) -> int:
 
 
 def max_subarray_sum(arr: list[int]) -> int:
-    """[유형2] 연속 부분합의 최댓값 (BOJ 1912, 카데인 알고리즘).
+    """[유형2] 연속 부분합의 최댓값 (카데인 알고리즘).
 
     dp[i] = i를 '반드시 포함'하는 연속 부분합의 최댓값
 
@@ -87,7 +87,7 @@ def max_subarray_sum(arr: list[int]) -> int:
 
 
 def lis_length_dp(arr: list[int]) -> int:
-    """[유형3] 가장 긴 증가 부분 수열 — O(n²) 버전 (BOJ 11053).
+    """[유형3] 가장 긴 증가 부분 수열 — O(n²) 버전.
 
     dp[i] = i로 끝나는 증가 수열의 최대 길이
     (n이 크면 algo.binary_search.lis_length 의 O(n log n) 버전을 쓰세요)
@@ -107,7 +107,7 @@ def lis_length_dp(arr: list[int]) -> int:
 
 
 def knapsack_01(items: list[tuple[int, int]], limit: int) -> int:
-    """[유형4] 0/1 배낭 (BOJ 12865). items = [(무게, 가치), ...]
+    """[유형4] 0/1 배낭 (0/1 배낭 — 프로그래머스 출제 빈도는 낮음). items = [(무게, 가치), ...]
 
     dp[w] = 무게 w까지 담았을 때의 최대 가치
     ★ 각 물건을 한 번만 쓰려면 무게 루프를 **역순**으로 돕니다.
@@ -153,7 +153,7 @@ def coin_change_min(coins: list[int], target: int) -> int:
 
 
 def triangle_max_path(triangle: list[list[int]]) -> int:
-    """[유형5] 정수 삼각형 (BOJ 1932): 위에서 아래로 내려가며 합 최대.
+    """[유형5] 정수 삼각형 (프로그래머스 '정수 삼각형' 43105): 위에서 아래로 내려가며 합 최대.
 
     dp[i][j] = (i,j)에 도달했을 때의 최대 합
 
@@ -196,7 +196,7 @@ def grid_max_path(board: list[list[int]]) -> int:
 
 
 def lcs_length(a: str, b: str) -> int:
-    """[유형6] 최장 공통 부분 수열 (BOJ 9251).
+    """[유형6] 최장 공통 부분 수열.
 
     dp[i][j] = a[:i] 와 b[:j] 의 LCS 길이
 

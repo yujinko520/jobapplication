@@ -5,7 +5,7 @@ from heapq import heapify, heappop, heappush
 
 
 def is_balanced(s: str) -> bool:
-    """괄호 짝 맞추기 (BOJ 9012형). 스택의 교과서 예제.
+    """괄호 짝 맞추기 (프로그래머스 '올바른 괄호' 12909). 스택의 교과서 예제.
 
     >>> is_balanced("(())")
     True
@@ -45,7 +45,7 @@ def remove_adjacent_pairs(s: str) -> str:
 
 
 def next_greater(arr: list[int]) -> list[int]:
-    """오큰수 (BOJ 17298) — Monotonic Stack. O(n).
+    """오큰수 (프로그래머스 '주식가격' 42584) — Monotonic Stack. O(n).
 
     각 원소의 오른쪽에서 자기보다 큰 첫 번째 수. 없으면 -1.
 
@@ -84,7 +84,7 @@ def sliding_window_max(arr: list[int], k: int) -> list[int]:
 
 
 def josephus(n: int, k: int) -> list[int]:
-    """요세푸스 문제 (BOJ 1158) — deque.rotate 활용.
+    """요세푸스 문제 (프로그래머스 '프린터' 42587에서 같은 회전 아이디어) — deque.rotate 활용.
 
     >>> josephus(7, 3)
     [3, 6, 2, 7, 5, 1, 4]
@@ -98,7 +98,7 @@ def josephus(n: int, k: int) -> list[int]:
 
 
 def merge_cards_min_cost(cards: list[int]) -> int:
-    """카드 정렬하기 (BOJ 1715) — 작은 것부터 합치는 그리디 + 힙.
+    """카드 정렬하기 (프로그래머스 '더 맵게' 42626과 같은 골격) — 작은 것부터 합치는 그리디 + 힙.
 
     두 묶음을 합칠 때마다 (a+b) 비용 발생. 총 비용의 최솟값.
 

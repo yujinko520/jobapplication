@@ -10,7 +10,7 @@ INF = float('inf')
 
 
 def dijkstra(graph: dict[int, list[tuple[int, int]]], start: int, n: int) -> list[float]:
-    """다익스트라 (BOJ 1753). graph[u] = [(v, weight), ...], 노드 번호 1..n
+    """다익스트라 (프로그래머스 '배달' 12978). graph[u] = [(v, weight), ...], 노드 번호 1..n
 
     반환: dist[1..n] (도달 불가는 INF). dist[0]은 사용하지 않습니다.
 
@@ -35,7 +35,7 @@ def dijkstra(graph: dict[int, list[tuple[int, int]]], start: int, n: int) -> lis
 
 
 def floyd_warshall(n: int, edges: list[tuple[int, int, int]]) -> list[list[float]]:
-    """플로이드-워셜 (BOJ 11404): 모든 쌍 최단거리. 노드 1..n, V ≤ 500 권장.
+    """플로이드-워셜 (프로그래머스 '순위' 49191에서 활용): 모든 쌍 최단거리. 노드 1..n, V ≤ 500 권장.
 
     >>> d = floyd_warshall(3, [(1, 2, 4), (2, 3, 2), (1, 3, 9)])
     >>> d[1][3]
@@ -99,7 +99,7 @@ class UnionFind:
 
 
 def kruskal_mst(n: int, edges: list[tuple[int, int, int]]) -> int:
-    """최소 스패닝 트리의 가중치 합 (BOJ 1197). edges = [(a, b, weight), ...]
+    """최소 스패닝 트리의 가중치 합 (프로그래머스 '섬 연결하기' 42861). edges = [(a, b, weight), ...]
 
     >>> kruskal_mst(3, [(1, 2, 1), (2, 3, 2), (1, 3, 3)])
     3
@@ -113,7 +113,7 @@ def kruskal_mst(n: int, edges: list[tuple[int, int, int]]) -> int:
 
 
 def topological_sort(n: int, edges: list[tuple[int, int]]) -> list[int]:
-    """위상 정렬 (BOJ 2252). edges = [(a, b), ...] 는 "a가 b보다 앞".
+    """위상 정렬 (선행 관계가 있는 작업 순서 정하기). edges = [(a, b), ...] 는 "a가 b보다 앞".
 
     사이클이 있으면 빈 리스트를 반환합니다.
 

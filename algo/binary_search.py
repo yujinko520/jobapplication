@@ -72,7 +72,7 @@ def parametric_min(lo: int, hi: int, possible: Callable[[int], bool]) -> int:
 
 
 def max_lan_length(lines: list[int], need: int) -> int:
-    """랜선 자르기 (BOJ 1654): need개 이상 만들 수 있는 최대 길이.
+    """랜선 자르기 (파라메트릭 — 프로그래머스 '입국심사'와 같은 골격): need개 이상 만들 수 있는 최대 길이.
 
     >>> max_lan_length([802, 743, 457, 539], 11)
     200
@@ -84,7 +84,7 @@ def max_lan_length(lines: list[int], need: int) -> int:
 
 
 def max_tree_cut_height(trees: list[int], need: int) -> int:
-    """나무 자르기 (BOJ 2805): need 이상 가져갈 수 있는 절단기 최대 높이.
+    """나무 자르기 (파라메트릭 — 자르기 유형): need 이상 가져갈 수 있는 절단기 최대 높이.
 
     >>> max_tree_cut_height([20, 15, 10, 17], 7)
     15
@@ -96,7 +96,7 @@ def max_tree_cut_height(trees: list[int], need: int) -> int:
 
 
 def max_router_gap(houses: list[int], routers: int) -> int:
-    """공유기 설치 (BOJ 2110): 가장 인접한 두 공유기 거리의 최댓값.
+    """공유기 설치 (파라메트릭 — 프로그래머스 '징검다리 건너기' 계열): 가장 인접한 두 공유기 거리의 최댓값.
 
     >>> max_router_gap([1, 2, 8, 4, 9], 3)
     3

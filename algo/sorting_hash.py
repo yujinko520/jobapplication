@@ -27,7 +27,7 @@ def sort_stable_two_pass(people: list[tuple[str, int]]) -> list[tuple[str, int]]
 
 
 def counting_sort(nums: list[int], max_value: int) -> list[int]:
-    """계수 정렬 O(N) — 값의 범위가 작고 입력이 아주 클 때 (BOJ 10989).
+    """계수 정렬 O(N) — 값의 범위가 작고 입력이 아주 클 때.
 
     >>> counting_sort([5, 2, 3, 1, 4, 2, 3, 5, 1, 7], 10)
     [1, 1, 2, 2, 3, 3, 4, 5, 5, 7]
@@ -42,7 +42,7 @@ def counting_sort(nums: list[int], max_value: int) -> list[int]:
 
 
 def compress_coordinates(arr: list[int]) -> list[int]:
-    """좌표 압축: 값 대신 '순위'만 필요할 때 (BOJ 18870).
+    """좌표 압축: 값 대신 '순위'만 필요할 때.
 
     >>> compress_coordinates([2, 4, -10, 4, -9])
     [2, 3, 0, 3, 1]
@@ -92,7 +92,7 @@ def not_finished(participant: list[str], completion: list[str]) -> str:
 
 
 def exists_in_sorted(cards: list[int], queries: list[int]) -> list[int]:
-    """숫자 카드 (BOJ 10815): 있으면 1, 없으면 0.
+    """숫자 카드 (프로그래머스 '폰켓몬' 계열 — set 조회): 있으면 1, 없으면 0.
 
     set으로 해도 되고, 정렬 + bisect로도 됩니다. set이 더 빠릅니다.
 
@@ -104,7 +104,7 @@ def exists_in_sorted(cards: list[int], queries: list[int]) -> list[int]:
 
 
 def count_occurrences(cards: list[int], queries: list[int]) -> list[int]:
-    """숫자 카드 2 (BOJ 10816): 각 질의 값이 몇 개인지.
+    """숫자 카드 2 (Counter로 개수 세기): 각 질의 값이 몇 개인지.
 
     >>> count_occurrences([6, 3, 2, 10, 10, 10, -10, -10, 7, 3], [10, 9, -5, 2, 3, 4, 5, -10])
     [3, 0, 0, 1, 2, 0, 0, 2]

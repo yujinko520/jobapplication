@@ -24,7 +24,7 @@ def two_sum_sorted(arr: list[int], target: int) -> tuple[int, int] | None:
 
 
 def closest_pair_sum(arr: list[int]) -> tuple[int, int]:
-    """두 용액 (BOJ 2470): 합이 0에 가장 가까운 두 값.
+    """두 용액 (프로그래머스 '구명보트' 42885와 같은 양끝 포인터): 합이 0에 가장 가까운 두 값.
 
     >>> closest_pair_sum([-99, -2, -1, 4, 98])
     (-99, 98)
@@ -49,7 +49,7 @@ def closest_pair_sum(arr: list[int]) -> tuple[int, int]:
 
 
 def count_subarrays_with_sum(arr: list[int], target: int) -> int:
-    """합이 정확히 target인 연속 부분수열의 개수 (양수 배열, BOJ 2003형).
+    """합이 정확히 target인 연속 부분수열의 개수 (양수 배열).
 
     >>> count_subarrays_with_sum([1, 2, 3, 4, 2, 5, 3, 1, 1, 2], 5)
     3
@@ -68,7 +68,7 @@ def count_subarrays_with_sum(arr: list[int], target: int) -> int:
 
 
 def shortest_subarray_at_least(arr: list[int], target: int) -> int:
-    """합이 target 이상인 가장 짧은 연속 부분수열의 길이 (BOJ 1806).
+    """합이 target 이상인 가장 짧은 연속 부분수열의 길이 (프로그래머스 '보석 쇼핑' 67258과 같은 골격).
 
     없으면 0.
 

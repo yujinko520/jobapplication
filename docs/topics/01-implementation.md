@@ -100,15 +100,20 @@ rotated = [list(row) for row in zip(*board[::-1])]
 - 경계 검사 `0 <= nx < n and 0 <= ny < m` 를 빼먹으면 런타임 에러
 - 문제를 **작은 함수로 쪼개세요** (move, rotate, check) — 한 함수에 다 넣으면 디버깅 불가
 
-## 추천 문제
+## 추천 문제 (프로그래머스)
 
-| 문제 | 난이도 | 포인트 |
+| 문제 | 레벨 | 포인트 |
 |---|---|---|
-| [BOJ 2798 블랙잭](https://www.acmicpc.net/problem/2798) | 브론즈2 | 3중 반복문 첫걸음 |
-| [BOJ 2231 분해합](https://www.acmicpc.net/problem/2231) | 브론즈2 | 범위 잡기 |
-| [BOJ 15649 N과 M(1)](https://www.acmicpc.net/problem/15649) | 실버3 | 백트래킹 입문 ★ |
-| [BOJ 14500 테트로미노](https://www.acmicpc.net/problem/14500) | 골드5 | 구현 + 완전탐색 |
-| [BOJ 14888 연산자 끼워넣기](https://www.acmicpc.net/problem/14888) | 실버1 | 순열 완전탐색 ★ |
-| [BOJ 14889 스타트와 링크](https://www.acmicpc.net/problem/14889) | 실버1 | 조합 |
+| [두 개 뽑아서 더하기](https://school.programmers.co.kr/learn/courses/30/lessons/68644) | Lv.1 | 이중 반복문 첫걸음 |
+| [최소직사각형](https://school.programmers.co.kr/learn/courses/30/lessons/86491) | Lv.1 | 관찰하면 완전탐색도 필요 없음 |
+| [모의고사](https://school.programmers.co.kr/learn/courses/30/lessons/42840) | Lv.1 | 패턴 완전탐색 ★ |
+| [덧칠하기](https://school.programmers.co.kr/learn/courses/30/lessons/161989) | Lv.1 | 한 번 훑기 구현 |
+| [키패드 누르기](https://school.programmers.co.kr/learn/courses/30/lessons/67256) | Lv.1 | 시뮬레이션 — 꼼꼼함 시험 ★ |
+| [카펫](https://school.programmers.co.kr/learn/courses/30/lessons/42842) | Lv.2 | 약수 완전탐색 ★ |
+| [소수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/42839) | Lv.2 | permutations 순열 ★★ |
+| [피로도](https://school.programmers.co.kr/learn/courses/30/lessons/87946) | Lv.2 | 백트래킹 / 순열 ★★ |
+| [전력망을 둘로 나누기](https://school.programmers.co.kr/learn/courses/30/lessons/86971) | Lv.2 | 완전탐색 + 탐색 결합 |
+| [행렬 테두리 회전하기](https://school.programmers.co.kr/learn/courses/30/lessons/77485) | Lv.2 | 2차원 시뮬레이션 (도전) |
 
-> **N과 M 시리즈(15649~15656)를 전부 푸세요.** 백트래킹 감각이 확실히 잡힙니다.
+> **소수 찾기 → 피로도** 순서로 푸세요. 이 둘을 스스로 풀면 완전탐색은 끝난 겁니다.
+> `permutations`로 푸는 문제와 백트래킹으로 푸는 문제의 차이를 몸으로 느끼는 게 목적입니다.

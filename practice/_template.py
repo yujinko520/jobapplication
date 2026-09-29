@@ -1,8 +1,8 @@
-"""[문제 번호] 문제 이름
+"""[프로그래머스] 문제 이름 (Lv.?)
 
-링크: https://www.acmicpc.net/problem/____
+링크: https://school.programmers.co.kr/learn/courses/30/lessons/____
 유형: ____
-제한: N <= ____  →  허용 복잡도 O(____)
+제한: N <= ____  ->  허용 복잡도 O(____)
 
 --- 설계 (코드 치기 전에 여기부터 채우세요) ---
 1.
@@ -10,31 +10,19 @@
 3.
 
 --- 엣지 케이스 ---
-- n = 1 일 때?
-- 답이 없을 때 출력값은?
+- 원소가 1개일 때?
+- 답이 없을 때 반환값은? (-1 / 0 / 빈 리스트)
+- 반환 타입이 리스트인가 정수인가?
 """
 
-import sys
 
-
-def solve(data: str) -> str:
-    """입력 문자열을 받아 출력 문자열을 반환 (테스트하기 쉽게 분리)."""
-    lines = data.strip().split('\n')
-    # n = int(lines[0])
-    # arr = list(map(int, lines[1].split()))
-    return ""
-
-
-def main() -> None:
-    print(solve(sys.stdin.read()))
+def solution(params):
+    answer = 0
+    # 여기를 채웁니다
+    return answer          # ★ print가 아니라 return
 
 
 if __name__ == "__main__":
-    # 제출 전 예제로 확인
-    EXAMPLE_IN = """
-"""
-    EXAMPLE_OUT = """
-"""
-    got = solve(EXAMPLE_IN)
-    print("결과:", got)
-    print("기대:", EXAMPLE_OUT.strip())
+    # 문제에 있는 입출력 예제를 그대로 넣고 확인하세요
+    print("예제1:", solution(...), "/ 기대: ...")
+    print("예제2:", solution(...), "/ 기대: ...")

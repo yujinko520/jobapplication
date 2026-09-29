@@ -94,14 +94,18 @@ result = sum(x * y for x, y in zip(a, b))
 
 **헷갈리면**: 반례를 만들어 보세요. 반례가 있으면 DP, 없으면 그리디.
 
-## 추천 문제
+## 추천 문제 (프로그래머스)
 
-| 문제 | 난이도 | 포인트 |
+| 문제 | 레벨 | 포인트 |
 |---|---|---|
-| [BOJ 11047 동전 0](https://www.acmicpc.net/problem/11047) | 실버4 | 그리디 입문 ★ |
-| [BOJ 1931 회의실 배정](https://www.acmicpc.net/problem/1931) | 실버1 | 끝시간 정렬 ★★ 필수 |
-| [BOJ 11399 ATM](https://www.acmicpc.net/problem/11399) | 실버4 | 작은 것부터 |
-| [BOJ 1541 잃어버린 괄호](https://www.acmicpc.net/problem/1541) | 실버2 | 관찰이 핵심 ★ |
-| [BOJ 1715 카드 정렬하기](https://www.acmicpc.net/problem/1715) | 골드4 | 힙 + 그리디 ★ |
-| [BOJ 2839 설탕 배달](https://www.acmicpc.net/problem/2839) | 실버4 | 그리디 반례 체험 (DP로도 가능) |
-| [프로그래머스 구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885) | Lv2 | 정렬 + 투포인터 그리디 ★ |
+| [체육복](https://school.programmers.co.kr/learn/courses/30/lessons/42862) | Lv.1 | 그리디 입문 ★ |
+| [큰 수 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/42883) | Lv.2 | 그리디 + 스택 ★★ |
+| [구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885) | Lv.2 | 정렬 후 양끝 ★ |
+| [조이스틱](https://school.programmers.co.kr/learn/courses/30/lessons/42860) | Lv.2 | 반례가 많은 그리디 (주의) |
+| [섬 연결하기](https://school.programmers.co.kr/learn/courses/30/lessons/42861) | Lv.3 | 크루스칼 MST |
+| [단속카메라](https://school.programmers.co.kr/learn/courses/30/lessons/42884) | Lv.3 | 구간 끝점 정렬 ★★ |
+
+> **단속카메라**가 예전 "회의실 배정"과 같은 골격입니다.
+> **끝나는 지점 기준 정렬** — 이 한 줄이 이 유형의 90%예요.
+>
+> **조이스틱**은 그리디 반례를 체험하는 용도입니다. 틀려도 괜찮으니 꼭 한 번 부딪혀 보세요.

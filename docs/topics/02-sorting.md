@@ -51,7 +51,7 @@ points.sort(key=lambda p: (p[0], p[1]))   # x 오름차순, 같으면 y 오름�
 
 ### 계수 정렬 (값의 범위가 작을 때, O(N))
 ```python
-# 수가 -10000 ~ 10000, 개수는 1000만 개인 경우 (BOJ 10989 류)
+# 값의 범위는 좁은데 개수가 수백만인 경우
 cnt = [0] * 10001
 for x in nums:
     cnt[x] += 1
@@ -59,7 +59,7 @@ for v in range(10001):
     for _ in range(cnt[v]):
         print(v)
 ```
-`sort()`가 시간/메모리 초과날 만큼 입력이 크면 이걸 씁니다.
+`sort()`가 효율성 테스트를 못 넘길 만큼 입력이 크면 이걸 씁니다. (실전 빈도는 낮음)
 
 ### 좌표 압축
 값 자체가 아니라 **순위**만 필요할 때.
@@ -81,13 +81,16 @@ compressed = [rank[x] for x in arr]
 
 > 실행 가능한 코드: [`algo/sorting_hash.py`](../../algo/sorting_hash.py)
 
-## 추천 문제
+## 추천 문제 (프로그래머스)
 
-| 문제 | 난이도 | 포인트 |
+| 문제 | 레벨 | 포인트 |
 |---|---|---|
-| [BOJ 2750 수 정렬하기](https://www.acmicpc.net/problem/2750) | 브론즈1 | 기본 |
-| [BOJ 10989 수 정렬하기 3](https://www.acmicpc.net/problem/10989) | 브론즈1 | 계수 정렬 필수 ★ |
-| [BOJ 11650 좌표 정렬하기](https://www.acmicpc.net/problem/11650) | 실버5 | key 튜플 |
-| [BOJ 10825 국영수](https://www.acmicpc.net/problem/10825) | 실버4 | 다중 조건 정렬 ★ |
-| [BOJ 1181 단어 정렬](https://www.acmicpc.net/problem/1181) | 실버5 | 길이+사전순 |
-| [프로그래머스 가장 큰 수](https://school.programmers.co.kr/learn/courses/30/lessons/42746) | Lv2 | 커스텀 key 응용 ★ |
+| [K번째수](https://school.programmers.co.kr/learn/courses/30/lessons/42748) | Lv.1 | 슬라이싱 + 정렬 기본 ★ |
+| [문자열 내 마음대로 정렬하기](https://school.programmers.co.kr/learn/courses/30/lessons/12915) | Lv.1 | key 튜플 입문 ★ |
+| [H-Index](https://school.programmers.co.kr/learn/courses/30/lessons/42747) | Lv.2 | 정렬 후 관찰 |
+| [가장 큰 수](https://school.programmers.co.kr/learn/courses/30/lessons/42746) | Lv.2 | 커스텀 key의 정수 ★★ |
+| [전화번호 목록](https://school.programmers.co.kr/learn/courses/30/lessons/42577) | Lv.2 | 정렬하면 접두사가 이웃이 됨 |
+| [메뉴 리뉴얼](https://school.programmers.co.kr/learn/courses/30/lessons/72411) | Lv.2 | 정렬 + 조합 (도전) |
+
+> **가장 큰 수**가 이 유형의 핵심입니다. `key=lambda x: x*3` 이 왜 되는지 이해하면
+> "정렬 기준을 만들어내는" 감각이 생깁니다. 30분 고민 후 풀이를 보세요.

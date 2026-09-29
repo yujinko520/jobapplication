@@ -1,6 +1,7 @@
 # Python3 코딩테스트 준비 (노베이스 → 합격권)
 
 > **시험일: 2026년 10월 24일 (토)** — 학습 시작 2026-09-29, 남은 기간 **25일**
+> **플랫폼: 프로그래머스** (백준은 2026-04-28 서비스 종료)
 > 학습 방향과 주차별 커리큘럼은 **[CLAUDE.md](CLAUDE.md)** 를 먼저 읽으세요.
 
 알고리즘은 처음이지만 Python 문법은 다뤄본 사람을 위한 학습 레포입니다.
@@ -46,18 +47,19 @@
 
 ## 2. 어디서 문제를 푸나
 
-| 플랫폼 | 특징 | 언제 쓰나 |
-|---|---|---|
-| [백준 (BOJ)](https://www.acmicpc.net/) | 문제 수 압도적, `input()`으로 표준입력 | 유형별 훈련 주력 |
-| [프로그래머스](https://programmers.co.kr/) | 함수 `solution()` 채우기, 국내 기업 실제 출제 형식 | 실전 대비 |
-| [solved.ac](https://solved.ac/) | 백준 문제 난이도(브론즈~루비) 표시 | 내 수준 문제 찾기 |
-| [LeetCode](https://leetcode.com/) | 영어, 외국계/네카라 일부 | 여유 있으면 |
+2026년 4월 백준(BOJ) 종료 이후, 국내 취업용 코테 준비는 **프로그래머스로 수렴**했습니다.
+네이버·카카오·라인이 실제 시험에 쓰는 플랫폼이라 **연습 환경 = 실전 환경**입니다.
 
-**시작 난이도**: solved.ac 기준 **브론즈 2 → 실버 3**이 노베이스 출발선입니다.
-실버 1~골드 5를 별 도움 없이 풀면 대부분 기업 코테 통과권입니다.
+| 메뉴 | 용도 |
+|---|---|
+| [고득점 Kit](https://school.programmers.co.kr/learn/challenges?tab=algorithm_practice_kit) | **유형별 문제집. 이 커리큘럼의 척추** |
+| [코딩테스트 연습](https://school.programmers.co.kr/learn/challenges) | 레벨·태그 필터 |
 
-추천 커리큘럼: [백준 단계별 풀어보기](https://www.acmicpc.net/step) 를 위에서부터 순서대로.
-이미 로드맵이 잘 짜여 있어서 노베이스에겐 이게 제일 빠릅니다.
+**난이도 기준**: Lv.1을 막힘없이 → **Lv.2가 합격선** → Lv.3은 BFS/DFS·DP만 선별.
+Lv.4~5는 버립니다.
+
+> 참고: 삼성(SW Expert Academy) 등 일부는 여전히 표준입력형입니다.
+> 필요하면 [docs/00 부록](docs/00-getting-started.md)만 훑으면 됩니다.
 
 ## 3. 이 레포 쓰는 법
 
@@ -75,10 +77,10 @@ python3 -m algo.binary_search
 
 ## 4. 오늘 당장 할 일
 
-1. [백준](https://www.acmicpc.net/) 회원가입
-2. [docs/00-getting-started.md](docs/00-getting-started.md) 읽고 입출력 템플릿 외우기
-3. 백준 [1000번 (A+B)](https://www.acmicpc.net/problem/1000) 제출해서 "맞았습니다!" 한 번 보기
-4. [BOJ 2798 블랙잭](https://www.acmicpc.net/problem/2798), [BOJ 2231 분해합](https://www.acmicpc.net/problem/2231) 풀기
+1. [프로그래머스](https://school.programmers.co.kr/) 회원가입
+2. [docs/00-getting-started.md](docs/00-getting-started.md) 읽고 `solution()` 형식 익히기
+3. [두 개 뽑아서 더하기](https://school.programmers.co.kr/learn/courses/30/lessons/68644) 제출해서 통과 한 번 보기
+4. [모의고사](https://school.programmers.co.kr/learn/courses/30/lessons/42840), [최소직사각형](https://school.programmers.co.kr/learn/courses/30/lessons/86491) 풀기
 5. [docs/04-review-log.md](docs/04-review-log.md) 에 오답노트 첫 줄 쓰기
 
 여기까지 하면 1일차 완료입니다. 나머지는 [CLAUDE.md](CLAUDE.md)의 커리큘럼을 따라가세요.

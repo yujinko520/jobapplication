@@ -135,14 +135,19 @@ heappush(h, (우선순위, 데이터))   # 튜플이면 첫 원소 기준
 | 양쪽에서 넣고 빼기 / 슬라이딩 윈도우 | 덱 |
 | 매번 최솟값(최댓값)이 필요 | 힙 (heapq) |
 
-## 추천 문제
+## 추천 문제 (프로그래머스)
 
-| 문제 | 난이도 | 포인트 |
+| 문제 | 레벨 | 포인트 |
 |---|---|---|
-| [BOJ 10828 스택](https://www.acmicpc.net/problem/10828) | 실버4 | 기본 구현 |
-| [BOJ 9012 괄호](https://www.acmicpc.net/problem/9012) | 실버4 | 괄호 짝 ★ |
-| [BOJ 10845 큐](https://www.acmicpc.net/problem/10845) | 실버4 | deque |
-| [BOJ 1874 스택 수열](https://www.acmicpc.net/problem/1874) | 실버2 | 스택 응용 |
-| [BOJ 17298 오큰수](https://www.acmicpc.net/problem/17298) | 골드4 | Monotonic Stack ★ |
-| [BOJ 1927 최소 힙](https://www.acmicpc.net/problem/1927) | 실버2 | heapq |
-| [BOJ 11286 절댓값 힙](https://www.acmicpc.net/problem/11286) | 실버1 | 힙 + 커스텀 키 |
+| [같은 숫자는 싫어](https://school.programmers.co.kr/learn/courses/30/lessons/12906) | Lv.1 | 스택 기본 ★ |
+| [올바른 괄호](https://school.programmers.co.kr/learn/courses/30/lessons/12909) | Lv.2 | 괄호 짝 — 스택의 교과서 ★★ |
+| [크레인 인형뽑기 게임](https://school.programmers.co.kr/learn/courses/30/lessons/64061) | Lv.2 | 스택 여러 개 다루기 ★ |
+| [기능개발](https://school.programmers.co.kr/learn/courses/30/lessons/42586) | Lv.2 | 큐 처리 |
+| [프린터](https://school.programmers.co.kr/learn/courses/30/lessons/42587) | Lv.2 | deque 회전 |
+| [다리를 지나는 트럭](https://school.programmers.co.kr/learn/courses/30/lessons/42583) | Lv.2 | 큐 시뮬레이션 ★ |
+| [주식가격](https://school.programmers.co.kr/learn/courses/30/lessons/42584) | Lv.2 | Monotonic Stack ★★ |
+| [더 맵게](https://school.programmers.co.kr/learn/courses/30/lessons/42626) | Lv.2 | 힙(heapq) ★★ |
+| [이중우선순위큐](https://school.programmers.co.kr/learn/courses/30/lessons/42628) | Lv.3 | 힙 두 개 (도전) |
+
+> **주식가격**은 O(n²)로도 통과되지만, **스택으로 O(n)에 푸는 방법**을 꼭 익히세요.
+> 이 아이디어가 Lv.3 이상에서 계속 나옵니다.

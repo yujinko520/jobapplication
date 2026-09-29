@@ -160,18 +160,37 @@ for i in range(n):
 - [ ] 노드 번호가 1부터인데 배열을 `n`이 아니라 `n+1`로 잡았나
 - [ ] 재귀 DFS면 `setrecursionlimit` 했나
 
-## 8. 추천 문제 — 이 순서대로 푸세요 ★
+## 8. 추천 문제 — 이 순서대로 푸세요 ★ (프로그래머스)
 
-| 문제 | 난이도 | 포인트 |
+### 1주차: 탐색의 골격 익히기
+| 문제 | 레벨 | 포인트 |
 |---|---|---|
-| [BOJ 1260 DFS와 BFS](https://www.acmicpc.net/problem/1260) | 실버2 | 둘 다 기본 ★ 필수 |
-| [BOJ 2606 바이러스](https://www.acmicpc.net/problem/2606) | 실버3 | 연결 요소 |
-| [BOJ 2667 단지번호붙이기](https://www.acmicpc.net/problem/2667) | 실버1 | 격자 덩어리 세기 ★ |
-| [BOJ 2178 미로 탐색](https://www.acmicpc.net/problem/2178) | 실버1 | 격자 최단거리 ★★ |
-| [BOJ 7576 토마토](https://www.acmicpc.net/problem/7576) | 골드5 | 다중 시작점 BFS ★★ |
-| [BOJ 1012 유기농 배추](https://www.acmicpc.net/problem/1012) | 실버2 | 덩어리 세기 |
-| [BOJ 2606 / 7562 나이트의 이동](https://www.acmicpc.net/problem/7562) | 실버1 | 이동 방향 8개 |
-| [BOJ 1697 숨바꼭질](https://www.acmicpc.net/problem/1697) | 실버1 | 격자가 아닌 BFS ★ |
-| [BOJ 2206 벽 부수고 이동하기](https://www.acmicpc.net/problem/2206) | 골드3 | 상태를 하나 더 (3차원 방문) |
+| [타겟 넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165) | Lv.2 | DFS 첫걸음. 재귀로 모든 경우 ★ |
+| [카카오프렌즈 컬러링북](https://school.programmers.co.kr/learn/courses/30/lessons/1829) | Lv.2 | 격자 덩어리 세기 |
+| [무인도 여행](https://school.programmers.co.kr/learn/courses/30/lessons/154540) | Lv.2 | 덩어리 세기 + 값 모으기 ★ |
+| [네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162) | Lv.3 | 연결 요소 개수 (인접 행렬) ★★ |
 
-마지막 두 문제(1697, 2206)까지 풀면 BFS는 확실히 넘긴 겁니다.
+### 2주차: 최단거리와 상태
+| 문제 | 레벨 | 포인트 |
+|---|---|---|
+| [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844) | Lv.2 | **격자 BFS 최단거리 — 이 유형의 원형** ★★★ |
+| [미로 탈출](https://school.programmers.co.kr/learn/courses/30/lessons/159993) | Lv.2 | 레버 경유 → BFS 두 번 ★★ |
+| [리코쳇 로봇](https://school.programmers.co.kr/learn/courses/30/lessons/169199) | Lv.2 | 한 번에 쭉 미끄러지는 이동 ★ |
+| [단어 변환](https://school.programmers.co.kr/learn/courses/30/lessons/43163) | Lv.3 | 격자가 아닌 BFS (상태 전이) ★★ |
+| [여행경로](https://school.programmers.co.kr/learn/courses/30/lessons/43164) | Lv.3 | DFS + 백트래킹 + 사전순 |
+| [가장 먼 노드](https://school.programmers.co.kr/learn/courses/30/lessons/49189) | Lv.3 | BFS 거리 배열 활용 ★ |
+| [전력망을 둘로 나누기](https://school.programmers.co.kr/learn/courses/30/lessons/86971) | Lv.2 | 간선 하나씩 끊고 탐색 |
+| [순위](https://school.programmers.co.kr/learn/courses/30/lessons/49191) | Lv.3 | 도달 가능성 (그래프 사고) |
+
+### 도전 (여유 있을 때만)
+| 문제 | 레벨 | 포인트 |
+|---|---|---|
+| [경주로 건설](https://school.programmers.co.kr/learn/courses/30/lessons/67259) | Lv.3 | 방향까지 상태에 포함 (3차원 방문) |
+| [아이템 줍기](https://school.programmers.co.kr/learn/courses/30/lessons/87694) | Lv.3 | 좌표 2배 확대 트릭 |
+
+---
+
+**이것만은 반드시**: [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844)
+
+격자 BFS 최단거리의 원형입니다. 이 문제를 **아무것도 안 보고 15분 안에** 칠 수 있으면
+코테 BFS는 사실상 끝난 겁니다. 3단계 기간 동안 **최소 3번** 다시 푸세요.

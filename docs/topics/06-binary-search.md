@@ -65,9 +65,10 @@ def parametric(lo, hi, possible):
     return answer
 ```
 
-### 예시: 랜선 자르기 (BOJ 1654)
+### 예시: 랜선 자르기 (파라메트릭의 전형)
 
 N개의 랜선을 잘라서 M개 이상을 만들 때, 가능한 최대 길이는?
+(프로그래머스 **입국심사**가 정확히 같은 골격입니다)
 
 ```python
 def max_len(lines, m):
@@ -107,13 +108,17 @@ def max_len(lines, m):
 - N이 크고(10^5~10^9), 답의 범위도 큰데 완전탐색은 불가능해 보임
 - "X일 때 가능한지 확인하는 건 쉬움"
 
-## 추천 문제
+## 추천 문제 (프로그래머스)
 
-| 문제 | 난이도 | 포인트 |
+| 문제 | 레벨 | 포인트 |
 |---|---|---|
-| [BOJ 1920 수 찾기](https://www.acmicpc.net/problem/1920) | 실버4 | 기본 이분탐색 ★ |
-| [BOJ 10816 숫자 카드 2](https://www.acmicpc.net/problem/10816) | 실버4 | bisect로 개수 세기 |
-| [BOJ 2805 나무 자르기](https://www.acmicpc.net/problem/2805) | 실버2 | 파라메트릭 입문 ★★ |
-| [BOJ 1654 랜선 자르기](https://www.acmicpc.net/problem/1654) | 실버2 | 파라메트릭 ★★ |
-| [BOJ 2110 공유기 설치](https://www.acmicpc.net/problem/2110) | 골드4 | 판정 함수 설계 ★ |
-| [BOJ 1300 K번째 수](https://www.acmicpc.net/problem/1300) | 골드2 | 난이도 있는 응용 |
+| [순위 검색](https://school.programmers.co.kr/learn/courses/30/lessons/72412) | Lv.2 | 정렬 + bisect로 범위 세기 ★ |
+| [입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238) | Lv.3 | 파라메트릭 서치의 교과서 ★★ |
+| [징검다리 건너기](https://school.programmers.co.kr/learn/courses/30/lessons/64062) | Lv.3 | 판정 함수 설계 ★★ |
+| [징검다리](https://school.programmers.co.kr/learn/courses/30/lessons/43236) | Lv.4 | 여유 있을 때만 |
+
+> 프로그래머스는 백준보다 이분탐색 문제 수가 적은 대신 **전부 파라메트릭 서치**입니다.
+> **입국심사**를 완전히 소화하면 이 유형은 끝납니다. 하루를 여기 써도 아깝지 않아요.
+>
+> 판정 함수(`possible(x)`)를 먼저 말로 정의하는 게 전부입니다:
+> "심사 시간을 x분 준다면 n명을 다 처리할 수 있는가?"

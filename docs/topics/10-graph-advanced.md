@@ -122,13 +122,16 @@ while q:
 4. 플로이드-워셜 — 코드가 4줄이라 부담 없음, 한 번만 보기
 5. 벨만-포드 / MST — 시간 없으면 버려도 됨
 
-## 추천 문제
+## 추천 문제 (프로그래머스)
 
-| 문제 | 난이도 | 포인트 |
+| 문제 | 레벨 | 포인트 |
 |---|---|---|
-| [BOJ 1753 최단경로](https://www.acmicpc.net/problem/1753) | 골드4 | 다익스트라 기본 ★★ |
-| [BOJ 1916 최소비용 구하기](https://www.acmicpc.net/problem/1916) | 골드5 | 다익스트라 ★ |
-| [BOJ 11404 플로이드](https://www.acmicpc.net/problem/11404) | 골드4 | 플로이드-워셜 ★ |
-| [BOJ 1717 집합의 표현](https://www.acmicpc.net/problem/1717) | 골드4 | 유니온 파인드 ★ |
-| [BOJ 2252 줄 세우기](https://www.acmicpc.net/problem/2252) | 골드3 | 위상 정렬 ★ |
-| [BOJ 1197 최소 스패닝 트리](https://www.acmicpc.net/problem/1197) | 골드4 | 크루스칼 |
+| [배달](https://school.programmers.co.kr/learn/courses/30/lessons/12978) | Lv.2 | 다익스트라 입문 ★★ |
+| [가장 먼 노드](https://school.programmers.co.kr/learn/courses/30/lessons/49189) | Lv.3 | BFS로 충분 (가중치 없음) ★ |
+| [순위](https://school.programmers.co.kr/learn/courses/30/lessons/49191) | Lv.3 | 플로이드-워셜 / 도달 가능성 ★ |
+| [합승 택시 요금](https://school.programmers.co.kr/learn/courses/30/lessons/72413) | Lv.3 | 다익스트라 여러 번 (도전) |
+| [섬 연결하기](https://school.programmers.co.kr/learn/courses/30/lessons/42861) | Lv.3 | 크루스칼 + 유니온파인드 |
+
+> **배달** 하나만 확실히 하세요. 다익스트라 템플릿을 그대로 쓰는 문제입니다.
+> **가장 먼 노드**는 가중치가 없으니 **다익스트라 말고 BFS**로 푸는 게 맞습니다 —
+> 이 판단을 할 수 있는지가 이 문서의 진짜 목적입니다.

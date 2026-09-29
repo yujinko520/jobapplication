@@ -7,7 +7,7 @@ from itertools import combinations, permutations, product
 
 
 def n_and_m(n: int, m: int) -> list[list[int]]:
-    """1~n 중 서로 다른 m개를 골라 만든 모든 수열 (BOJ 15649 N과 M(1)).
+    """1~n 중 서로 다른 m개를 골라 만든 모든 수열 (순열 생성 — 프로그래머스 '소수 찾기'의 뼈대).
 
     백트래킹의 가장 기본형. 사전 순으로 나옵니다.
 
@@ -51,7 +51,7 @@ def subsets(arr: list[int]) -> list[list[int]]:
 
 
 def n_queens(n: int) -> int:
-    """N-Queen: 서로 공격하지 못하게 퀸 n개를 놓는 경우의 수 (BOJ 9663).
+    """N-Queen: 서로 공격하지 못하게 퀸 n개를 놓는 경우의 수 (백트래킹 가지치기의 고전 예제).
 
     가지치기(promising)가 들어간 백트래킹의 대표 예제입니다.
 
@@ -85,7 +85,7 @@ def n_queens(n: int) -> int:
 
 
 def max_operator_result(nums: list[int], ops: list[int]) -> tuple[int, int]:
-    """연산자 끼워넣기 (BOJ 14888): ops = [+, -, *, //] 각 개수.
+    """연산자 끼워넣기 (연산자 순열 완전탐색 — 프로그래머스 '피로도'와 같은 골격): ops = [+, -, *, //] 각 개수.
 
     나눗셈은 음수일 때 '몫을 취하고 절댓값' 규칙(문제 조건)을 따릅니다.
 

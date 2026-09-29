@@ -1,4 +1,4 @@
-"""practice/ 예제 풀이가 백준/프로그래머스 공식 예제와 일치하는지 검증."""
+"""practice/ 예제 풀이가 프로그래머스 공식 예제와 일치하는지 검증."""
 
 import importlib.util
 from pathlib import Path
@@ -16,24 +16,37 @@ def load(filename: str):
     return module
 
 
-def test_boj_2798_blackjack():
-    m = load("boj_2798_blackjack.py")
-    # 공식 예제
-    assert m.solve("5 21\n5 6 7 8 9") == 21
-    assert m.solve("10 500\n93 181 245 214 315 36 185 138 216 295") == 497
-    # 두 구현이 같은 답을 내는지
-    assert m.solve("5 21\n5 6 7 8 9") == m.solve_loops("5 21\n5 6 7 8 9")
+def test_pg_mock_exam():
+    """모의고사 (Lv.1) — https://school.programmers.co.kr/learn/courses/30/lessons/42840"""
+    m = load("pg_mock_exam.py")
+    assert m.solution([1, 2, 3, 4, 5]) == [1]          # 공식 예제1
+    assert m.solution([1, 3, 2, 4, 2]) == [1, 2, 3]    # 공식 예제2 (동점자 전원)
+    assert m.solution([2]) == [2]                      # 엣지: 1문제
+    # 패턴이 실제로 순환하는지 (1번 수포자는 1,2,3,4,5,1,2,... )
+    assert m.solution([1, 2, 3, 4, 5, 1, 2, 3, 4, 5]) == [1]
 
 
-def test_boj_2178_maze():
-    m = load("boj_2178_maze.py")
-    assert m.solve("4 6\n101111\n101010\n101011\n111011") == 15
-    assert m.solve("2 25\n1011101110111011101110111\n1110111011101110111011101") == 38
-    assert m.solve("7 7\n1011111\n1110001\n1000001\n1000001\n1000001\n1000001\n1111111") == 13
-    assert m.solve("1 1\n1") == 1          # 엣지: 시작 = 도착
+def test_pg_game_map_shortest():
+    """게임 맵 최단거리 (Lv.2) — https://school.programmers.co.kr/learn/courses/30/lessons/1844"""
+    m = load("pg_game_map_shortest.py")
+    ex1 = [[1, 0, 1, 1, 1],
+           [1, 0, 1, 0, 1],
+           [1, 0, 1, 1, 1],
+           [1, 1, 1, 0, 1],
+           [0, 0, 0, 0, 1]]
+    ex2 = [[1, 0, 1, 1, 1],
+           [1, 0, 1, 0, 1],
+           [1, 0, 1, 1, 1],
+           [1, 1, 1, 0, 0],
+           [0, 0, 0, 0, 1]]
+    assert m.solution(ex1) == 11        # 공식 예제1
+    assert m.solution(ex2) == -1        # 공식 예제2 (도달 불가)
+    assert m.solution([[1]]) == 1       # 엣지: 시작 = 도착
+    assert m.solution([[1, 1], [0, 1]]) == 3
 
 
 def test_pg_gym_clothes():
+    """의상 (Lv.2) — https://school.programmers.co.kr/learn/courses/30/lessons/42578"""
     m = load("pg_gym_clothes.py")
     assert m.solution([["yellowhat", "headgear"],
                        ["bluesunglasses", "eyewear"],
