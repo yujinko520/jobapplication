@@ -2,7 +2,8 @@
 
 ## 학습자 정보
 
-- **시험일: 2026년 10월 24일 (토)** — 학습 시작일 2026-09-17 기준 **37일 (5주 + 3일)**
+- **시험일: 2026년 10월 24일 (토)** — 실제 학습 시작일 **2026-09-29**, 총 **25일**
+- 학습 시간: **하루 2시간 확보 약속** (총 50시간). 이 예산에 맞춰 커리큘럼이 짜여 있음
 - 언어: **Python 3** (문법은 다뤄봤음 / 기본 문법 강의는 불필요)
 - **알고리즘은 노베이스** — 자료구조·복잡도·정형 풀이 패턴 전부 처음
 - 목표: 국내 기업 코딩테스트 통과 (백준 실버1~골드5 / 프로그래머스 Lv.2 수준)
@@ -89,78 +90,166 @@
 
 ---
 
-## 2. 5주 압축 커리큘럼 (D-37 → 10/24)
+## 2. 25일 커리큘럼 (9/29 시작 → 10/24 시험)
 
-> 하루 **2시간** 기준. 주말에 3~4시간 확보하면 더 여유롭습니다.
-> 못 지켜도 **BFS/DFS 주차(3주차)만은 절대 건너뛰지 마세요.**
+> 하루 2시간 × 25일 = **총 50시간**. 이건 "전 범위 학습"이 아니라 **점수 기대값 최적화** 플랜이다.
+> 시간 예산이 빠듯하므로 **하루라도 밀리면 BFS/DFS가 아닌 쪽을 잘라낸다.**
 
-### 1주차 (9/17 ~ 9/23) — 기반 다지기
-| 할 것 | 문서 |
-|---|---|
-| 입출력 템플릿 암기, 백준 첫 제출 | [docs/00](docs/00-getting-started.md) |
-| 코테용 Python 문법 (deque/Counter/정렬 key) | [docs/01](docs/01-python-cheatsheet.md) |
-| **시간복잡도 — N 보고 알고리즘 고르는 표 암기** | [docs/02](docs/02-complexity.md) |
-| 구현 / 완전탐색 / 백트래킹 | [topics/01](docs/topics/01-implementation.md) |
+### 단계별 시간 배분 (일수 = 그 유형의 중요도)
 
-**목표**: 백준 브론즈 전부 + 실버5~4 문제를 막힘없이. 단계별 풀어보기 1~6단계.
-**이번 주 필수 문제**: 2798, 2231, 15649(N과 M), 14888
-
-### 2주차 (9/24 ~ 9/30) — 자료구조
-| 할 것 | 문서 |
-|---|---|
-| 정렬 (`key` 다중조건) | [topics/02](docs/topics/02-sorting.md) |
-| 해시 (dict/set/Counter) | [topics/03](docs/topics/03-hash.md) |
-| 스택 / 큐 / 덱 / 힙 | [topics/04](docs/topics/04-stack-queue.md) |
-
-**목표**: "리스트에서 in 쓰다 시간초과" → set으로 바꾸는 반사신경.
-**이번 주 필수 문제**: 10825, 10815, 9012, 10828, 1927, 프로그래머스 Lv1 5문제
-
-### 3주차 (10/1 ~ 10/7) — **BFS/DFS 집중 ★ 최대 고비**
-| 할 것 | 문서 |
-|---|---|
-| 그래프 표현 (인접리스트 / 격자) | [topics/05](docs/topics/05-bfs-dfs.md) |
-| BFS 템플릿 **암기 수준으로** | 〃 |
-| DFS (재귀 + 스택 두 버전) | 〃 |
-| 격자 최단거리, 덩어리 세기, 다중시작점 BFS | 〃 |
-
-**이번 주에만 BFS/DFS 문제 15개 이상 푸세요.** 여기가 합격의 분기점입니다.
-**이번 주 필수 문제**: 1260, 2606, 2667, 2178, 7576, 1012, 1697, 2206
-
-### 4주차 (10/8 ~ 10/14) — 탐색 최적화 + 그리디
-| 할 것 | 문서 |
-|---|---|
-| 이분탐색 + **파라메트릭 서치** | [topics/06](docs/topics/06-binary-search.md) |
-| 투포인터 / 슬라이딩윈도우 / 누적합 | [topics/07](docs/topics/07-two-pointers.md) |
-| 그리디 (회의실 배정 패턴) | [topics/08](docs/topics/08-greedy.md) |
-
-**이번 주 필수 문제**: 1920, 2805, 1654, 11659, 1806, 1931, 11047, 1715
-
-### 5주차 (10/15 ~ 10/21) — DP + 최단경로
-| 할 것 | 문서 |
-|---|---|
-| DP 유형 1(피보나치형), 4(배낭), 5(2차원) **우선** | [topics/09](docs/topics/09-dp.md) |
-| 여유되면 LIS, LCS | 〃 |
-| 다익스트라 | [topics/10](docs/topics/10-graph-advanced.md) |
-
-**이번 주 필수 문제**: 1003, 2579, 1463, 9095, 1932, 12865, 1753
-DP가 너무 어려우면 **유형 1과 5만** 하고 나머지 시간은 BFS/DFS 복습에 쓰세요.
-(못 푸는 DP 1문제보다, 확실히 푸는 BFS 1문제가 점수에 유리합니다)
-
-### 마지막 (10/22 ~ 10/23) — 실전 모의 + 마무리
-- **10/22**: 2시간 재고 백준 실버~골드5 3문제 연속 풀기 (실전 리허설)
-- **10/23**: 새 문제 금지. `docs/04-review-log.md` 오답만 다시 풀기 + [실전 전략](docs/03-exam-day.md) 읽기 + 일찍 자기
-- **10/24**: 시험 🎯
+| 단계 | 기간 | 일수 | 주제 |
+|---|---|---|---|
+| 1단계 | 9/29(화) ~ 10/2(금) | 4일 | 입출력 + 시간복잡도 + 구현/완전탐색 |
+| 2단계 | 10/3(토) ~ 10/6(화) | 4일 | 정렬 + 해시 + 스택/큐/힙 |
+| **3단계** | **10/7(수) ~ 10/14(수)** | **8일** | **BFS / DFS ★ 전체의 1/3을 여기에** |
+| 4단계 | 10/15(목) ~ 10/18(일) | 4일 | 이분탐색 + 투포인터/누적합 + 그리디 |
+| 5단계 | 10/19(월) ~ 10/22(목) | 4일 | DP (유형 3개만) + 다익스트라(여유시) |
+| 6단계 | 10/23(금) | 1일 | 실전 모의고사 + 오답 복습 |
+| — | **10/24(토)** | — | **시험** |
 
 ---
+
+### 1단계 (9/29 ~ 10/2) — 기반 4일
+
+| 날짜 | 할 것 | 문서 |
+|---|---|---|
+| 9/29 화 | 입출력 템플릿 + 첫 제출 + **N 보고 알고리즘 고르는 표 암기** | [docs/00](docs/00-getting-started.md), [docs/02](docs/02-complexity.md) |
+| 9/30 수 | 코테용 Python 문법 (deque/Counter/정렬 key) + 완전탐색 | [docs/01](docs/01-python-cheatsheet.md), [topics/01](docs/topics/01-implementation.md) |
+| 10/1 목 | itertools 완전탐색 (순열/조합/중복순열) | [topics/01](docs/topics/01-implementation.md) |
+| 10/2 금 | 백트래킹 (넣고→재귀→빼기) | [topics/01](docs/topics/01-implementation.md) |
+
+**필수 문제 (8개)**: [1000](https://www.acmicpc.net/problem/1000), [2798](https://www.acmicpc.net/problem/2798),
+[2231](https://www.acmicpc.net/problem/2231), [1476](https://www.acmicpc.net/problem/1476),
+[15649](https://www.acmicpc.net/problem/15649)★, [15650](https://www.acmicpc.net/problem/15650),
+[14888](https://www.acmicpc.net/problem/14888)★, [14889](https://www.acmicpc.net/problem/14889)
+
+**이 단계 통과 기준**: 문제를 보면 제한 조건 N부터 확인하는 습관이 붙었다.
+
+---
+
+### 2단계 (10/3 ~ 10/6) — 자료구조 4일
+
+| 날짜 | 할 것 | 문서 |
+|---|---|---|
+| 10/3 토 | 정렬 `key` (다중 조건) | [topics/02](docs/topics/02-sorting.md) |
+| 10/4 일 | 해시 (dict/set/Counter/defaultdict) | [topics/03](docs/topics/03-hash.md) |
+| 10/5 월 | 스택 + 큐(deque) | [topics/04](docs/topics/04-stack-queue.md) |
+| 10/6 화 | 힙(heapq) + **프로그래머스 형식 적응** | [topics/04](docs/topics/04-stack-queue.md) |
+
+**필수 문제 (10개)**: [11650](https://www.acmicpc.net/problem/11650), [10825](https://www.acmicpc.net/problem/10825)★,
+[1181](https://www.acmicpc.net/problem/1181), [10815](https://www.acmicpc.net/problem/10815)★,
+[1764](https://www.acmicpc.net/problem/1764), [9012](https://www.acmicpc.net/problem/9012)★,
+[10828](https://www.acmicpc.net/problem/10828), [1927](https://www.acmicpc.net/problem/1927),
+[완주하지 못한 선수](https://school.programmers.co.kr/learn/courses/30/lessons/42576),
+[의상](https://school.programmers.co.kr/learn/courses/30/lessons/42578)
+
+**이 단계 통과 기준**: "리스트에서 `in` 쓰면 시간초과" → set으로 바꾸는 반사신경.
+
+---
+
+### 3단계 (10/7 ~ 10/14) — **BFS / DFS 8일 ★★ 여기가 합격의 전부**
+
+전체 25일 중 8일을 여기 씁니다. 출제 비중이 압도적이라 **투자 대비 회수가 가장 큽니다.**
+
+| 날짜 | 할 것 |
+|---|---|
+| 10/7 수 | 그래프 표현(인접리스트) + BFS 템플릿 **손으로 3번 쓰기** |
+| 10/8 목 | DFS (재귀 + 스택 두 버전) |
+| 10/9 금 | 격자 BFS — 덩어리 세기 (연결 요소) |
+| 10/10 토 | 격자 BFS — **최단거리** |
+| 10/11 일 | 다중 시작점 BFS (토마토형) |
+| 10/12 월 | 격자가 아닌 BFS (숫자 위 탐색) |
+| 10/13 화 | 상태를 하나 더 얹는 BFS (3차원 방문 배열) |
+| 10/14 수 | **전체 복습** — 앞의 문제 중 막혔던 것 재구현 |
+
+문서: [topics/05](docs/topics/05-bfs-dfs.md) / 코드: `algo/bfs_dfs.py`
+
+**필수 문제 (14개, 하루 2개꼴)**:
+[1260](https://www.acmicpc.net/problem/1260)★, [2606](https://www.acmicpc.net/problem/2606),
+[2667](https://www.acmicpc.net/problem/2667)★, [1012](https://www.acmicpc.net/problem/1012),
+[1926](https://www.acmicpc.net/problem/1926), [2178](https://www.acmicpc.net/problem/2178)★★,
+[7576](https://www.acmicpc.net/problem/7576)★★, [7562](https://www.acmicpc.net/problem/7562),
+[2644](https://www.acmicpc.net/problem/2644), [1697](https://www.acmicpc.net/problem/1697)★,
+[4179](https://www.acmicpc.net/problem/4179), [2206](https://www.acmicpc.net/problem/2206),
+[타겟 넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165),
+[네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162)
+
+**이 단계 통과 기준**: 빈 화면에서 BFS 템플릿을 **아무것도 안 보고** 칠 수 있다.
+여기까지 왔으면 시험은 이미 절반 이상 잡은 겁니다.
+
+---
+
+### 4단계 (10/15 ~ 10/18) — 탐색 최적화 + 그리디 4일
+
+| 날짜 | 할 것 | 문서 |
+|---|---|---|
+| 10/15 목 | 이분탐색 기본 + `bisect` | [topics/06](docs/topics/06-binary-search.md) |
+| 10/16 금 | **파라메트릭 서치** ("최댓값의 최솟값") | [topics/06](docs/topics/06-binary-search.md) |
+| 10/17 토 | 투포인터 + 누적합 | [topics/07](docs/topics/07-two-pointers.md) |
+| 10/18 일 | 그리디 (회의실 배정 패턴) | [topics/08](docs/topics/08-greedy.md) |
+
+**필수 문제 (10개)**: [1920](https://www.acmicpc.net/problem/1920), [10816](https://www.acmicpc.net/problem/10816),
+[2805](https://www.acmicpc.net/problem/2805)★★, [1654](https://www.acmicpc.net/problem/1654)★,
+[2110](https://www.acmicpc.net/problem/2110), [11659](https://www.acmicpc.net/problem/11659)★,
+[2003](https://www.acmicpc.net/problem/2003), [2470](https://www.acmicpc.net/problem/2470),
+[11047](https://www.acmicpc.net/problem/11047), [1931](https://www.acmicpc.net/problem/1931)★★
+
+---
+
+### 5단계 (10/19 ~ 10/22) — DP 4일 (범위 축소)
+
+25일 플랜에서는 **DP 유형을 3개로 줄입니다.** 전부 하려다 아무것도 못 건지는 게 최악입니다.
+
+| 날짜 | 할 것 | 문서 |
+|---|---|---|
+| 10/19 월 | DP 개념 + **유형1 (피보나치형)** | [topics/09](docs/topics/09-dp.md) |
+| 10/20 화 | **유형5 (2차원 격자 DP)** | [topics/09](docs/topics/09-dp.md) |
+| 10/21 수 | **유형4 (배낭)** — 역순 루프 주의 | [topics/09](docs/topics/09-dp.md) |
+| 10/22 목 | 다익스트라 **(여유 있을 때만)** / 없으면 BFS 복습 | [topics/10](docs/topics/10-graph-advanced.md) |
+
+**필수 문제 (8개)**: [1003](https://www.acmicpc.net/problem/1003), [9095](https://www.acmicpc.net/problem/9095),
+[1463](https://www.acmicpc.net/problem/1463)★★, [2579](https://www.acmicpc.net/problem/2579)★★,
+[11726](https://www.acmicpc.net/problem/11726), [1932](https://www.acmicpc.net/problem/1932)★,
+[12865](https://www.acmicpc.net/problem/12865)★★, [1753](https://www.acmicpc.net/problem/1753)(여유시)
+
+> **DP가 막히면 미련 없이 BFS/DFS 복습으로 전환하세요.**
+> 못 푸는 DP 1문제보다 확실히 푸는 BFS 1문제가 점수에 유리합니다.
+
+---
+
+### 6단계 (10/23 금) — 실전 리허설 하루
+
+- **오전/낮 (2시간)**: 타이머 켜고 **실버2 + 실버1 + 골드5** 3문제 연속. 처음 5분은 전체 훑고 순서 정하기
+- **저녁 (1시간)**: `docs/04-review-log.md` 오답만 다시 풀기 + [실전 전략](docs/03-exam-day.md) 정독
+- **새 알고리즘 공부 금지.** 일찍 잘 것
+
+### 10/24 (토) — 시험 🎯
+
+---
+
+### 밀렸을 때 잘라내는 순서 (중요)
+
+일정이 밀리는 건 정상입니다. 아래 순서대로 **위에서부터 버리세요.**
+
+1. 다익스트라 (5단계 마지막 날)
+2. DP 유형4 배낭
+3. 그리디
+4. 투포인터/누적합
+5. 힙(heapq)
+
+**절대 못 버리는 것**: 입출력 / 완전탐색 / 정렬·해시 / **BFS·DFS**
 
 ## 3. 하루 루틴 (2시간)
 
 | 시간 | 할 일 |
 |---|---|
 | 10분 | 어제 틀린 문제 **1개 다시 풀기** (복습이 제일 강함) |
-| 20분 | 오늘 유형 문서 읽기 |
-| 70분 | 문제 2~3개 (30분 룰 적용) |
-| 20분 | `docs/04-review-log.md` 오답노트 작성 |
+| 15분 | 오늘 유형 문서 읽기 |
+| 80분 | 문제 2~3개 (**30분 룰** 적용) |
+| 15분 | `docs/04-review-log.md` 오답노트 작성 |
+
+25일밖에 없으므로 **문서를 오래 읽지 마세요.** 15분 읽고 바로 문제로 넘어가는 게 맞습니다.
+개념은 문제를 풀면서 붙습니다.
 
 ### 30분 룰 ★
 모르는 문제를 3시간 붙잡는 건 공부가 아니라 낭비입니다.
@@ -238,12 +327,12 @@ python3 -m algo.graph        # 알고리즘 템플릿 실행해 보기
 
 ## 8. 진도 체크 (직접 갱신)
 
-- [ ] 1주차: 입출력 + 문법 + 완전탐색
-- [ ] 2주차: 정렬 + 해시 + 스택/큐
-- [ ] 3주차: **BFS / DFS** ★
-- [ ] 4주차: 이분탐색 + 투포인터 + 그리디
-- [ ] 5주차: DP + 다익스트라
-- [ ] 모의고사 2시간 3문제
+- [ ] 1단계 (~10/2): 입출력 + 복잡도 + 완전탐색
+- [ ] 2단계 (~10/6): 정렬 + 해시 + 스택/큐
+- [ ] 3단계 (~10/14): **BFS / DFS** ★★ 최우선
+- [ ] 4단계 (~10/18): 이분탐색 + 투포인터 + 그리디
+- [ ] 5단계 (~10/22): DP 유형 3개
+- [ ] 6단계 (10/23): 모의고사 2시간 3문제
 - [ ] 10/24 시험
 
 **합격 신호**: 백준 실버1 문제를 **아무 도움 없이 40분 안에** 풀 수 있으면 통과권입니다.

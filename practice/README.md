@@ -22,20 +22,22 @@
 
 ---
 
-## 주차별 필수 문제 체크리스트
+## 단계별 필수 문제 체크리스트 (25일 플랜)
 
-### 1주차 (9/17~9/23) 구현·완전탐색
+### 1단계 (9/29~10/2) 구현·완전탐색 — 8문제
 - [ ] [1000 A+B](https://www.acmicpc.net/problem/1000) — 첫 제출
 - [ ] [2798 블랙잭](https://www.acmicpc.net/problem/2798)
 - [ ] [2231 분해합](https://www.acmicpc.net/problem/2231)
+- [ ] [1476 날짜 계산](https://www.acmicpc.net/problem/1476)
 - [ ] [15649 N과 M(1)](https://www.acmicpc.net/problem/15649) ★
 - [ ] [15650 N과 M(2)](https://www.acmicpc.net/problem/15650)
 - [ ] [14888 연산자 끼워넣기](https://www.acmicpc.net/problem/14888) ★
 - [ ] [14889 스타트와 링크](https://www.acmicpc.net/problem/14889)
 
-### 2주차 (9/24~9/30) 정렬·해시·스택/큐
+### 2단계 (10/3~10/6) 정렬·해시·스택/큐 — 10문제
 - [ ] [11650 좌표 정렬하기](https://www.acmicpc.net/problem/11650)
 - [ ] [10825 국영수](https://www.acmicpc.net/problem/10825) ★
+- [ ] [1181 단어 정렬](https://www.acmicpc.net/problem/1181)
 - [ ] [10815 숫자 카드](https://www.acmicpc.net/problem/10815) ★
 - [ ] [1764 듣보잡](https://www.acmicpc.net/problem/1764)
 - [ ] [9012 괄호](https://www.acmicpc.net/problem/9012) ★
@@ -44,32 +46,35 @@
 - [ ] [프로그래머스 완주하지 못한 선수](https://school.programmers.co.kr/learn/courses/30/lessons/42576)
 - [ ] [프로그래머스 의상](https://school.programmers.co.kr/learn/courses/30/lessons/42578)
 
-### 3주차 (10/1~10/7) BFS/DFS ★★ 최대 고비
+### 3단계 (10/7~10/14) BFS/DFS ★★ — 14문제 (하루 2개)
 - [ ] [1260 DFS와 BFS](https://www.acmicpc.net/problem/1260) ★
 - [ ] [2606 바이러스](https://www.acmicpc.net/problem/2606)
 - [ ] [2667 단지번호붙이기](https://www.acmicpc.net/problem/2667) ★
 - [ ] [1012 유기농 배추](https://www.acmicpc.net/problem/1012)
+- [ ] [1926 그림](https://www.acmicpc.net/problem/1926)
 - [ ] [2178 미로 탐색](https://www.acmicpc.net/problem/2178) ★★
 - [ ] [7576 토마토](https://www.acmicpc.net/problem/7576) ★★
 - [ ] [7562 나이트의 이동](https://www.acmicpc.net/problem/7562)
+- [ ] [2644 촌수계산](https://www.acmicpc.net/problem/2644)
 - [ ] [1697 숨바꼭질](https://www.acmicpc.net/problem/1697) ★
-- [ ] [2206 벽 부수고 이동하기](https://www.acmicpc.net/problem/2206)
 - [ ] [4179 불!](https://www.acmicpc.net/problem/4179)
+- [ ] [2206 벽 부수고 이동하기](https://www.acmicpc.net/problem/2206)
+- [ ] [프로그래머스 타겟 넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165)
+- [ ] [프로그래머스 네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162)
 
-### 4주차 (10/8~10/14) 이분탐색·투포인터·그리디
+### 4단계 (10/15~10/18) 이분탐색·투포인터·그리디 — 10문제
 - [ ] [1920 수 찾기](https://www.acmicpc.net/problem/1920)
 - [ ] [10816 숫자 카드 2](https://www.acmicpc.net/problem/10816)
 - [ ] [2805 나무 자르기](https://www.acmicpc.net/problem/2805) ★★
 - [ ] [1654 랜선 자르기](https://www.acmicpc.net/problem/1654) ★
 - [ ] [2110 공유기 설치](https://www.acmicpc.net/problem/2110)
 - [ ] [11659 구간 합 구하기 4](https://www.acmicpc.net/problem/11659) ★
-- [ ] [1806 부분합](https://www.acmicpc.net/problem/1806) ★
+- [ ] [2003 수들의 합 2](https://www.acmicpc.net/problem/2003)
 - [ ] [2470 두 용액](https://www.acmicpc.net/problem/2470)
 - [ ] [11047 동전 0](https://www.acmicpc.net/problem/11047)
 - [ ] [1931 회의실 배정](https://www.acmicpc.net/problem/1931) ★★
-- [ ] [1541 잃어버린 괄호](https://www.acmicpc.net/problem/1541)
 
-### 5주차 (10/15~10/21) DP·다익스트라
+### 5단계 (10/19~10/22) DP — 8문제
 - [ ] [1003 피보나치 함수](https://www.acmicpc.net/problem/1003)
 - [ ] [9095 1,2,3 더하기](https://www.acmicpc.net/problem/9095)
 - [ ] [1463 1로 만들기](https://www.acmicpc.net/problem/1463) ★★
@@ -77,8 +82,7 @@
 - [ ] [11726 2×n 타일링](https://www.acmicpc.net/problem/11726)
 - [ ] [1932 정수 삼각형](https://www.acmicpc.net/problem/1932) ★
 - [ ] [12865 평범한 배낭](https://www.acmicpc.net/problem/12865) ★★
-- [ ] [1753 최단경로](https://www.acmicpc.net/problem/1753) ★
-- [ ] [1916 최소비용 구하기](https://www.acmicpc.net/problem/1916)
+- [ ] [1753 최단경로](https://www.acmicpc.net/problem/1753) — 여유 있을 때만
 
-### 마무리 (10/22) 실전 모의고사 — 2시간 타이머
+### 6단계 (10/23) 실전 모의고사 — 2시간 타이머
 - [ ] 실버2 1문제 + 실버1 1문제 + 골드5 1문제 연속으로

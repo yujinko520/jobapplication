@@ -1,6 +1,6 @@
 # Python3 코딩테스트 준비 (노베이스 → 합격권)
 
-> **시험일: 2026년 10월 24일 (토)**
+> **시험일: 2026년 10월 24일 (토)** — 학습 시작 2026-09-29, 남은 기간 **25일**
 > 학습 방향과 주차별 커리큘럼은 **[CLAUDE.md](CLAUDE.md)** 를 먼저 읽으세요.
 
 알고리즘은 처음이지만 Python 문법은 다뤄본 사람을 위한 학습 레포입니다.
@@ -28,21 +28,21 @@
 3. **손으로 먼저** — 코드부터 치지 말고 종이/주석에 "입력 → 어떻게 → 출력"을 먼저 쓰세요.
    구현이 막히는 이유의 80%는 문제를 덜 이해해서입니다.
 
-## 1. 5주 압축 로드맵 (시험일 2026-10-24)
+## 1. 25일 로드맵 (9/29 시작 → 10/24 시험)
 
-하루 2시간 기준. 상세 커리큘럼과 주차별 필수 문제는 **[CLAUDE.md](CLAUDE.md)** 에 있습니다.
+하루 2시간 기준, 총 50시간. 날짜별 상세 계획과 필수 문제는 **[CLAUDE.md](CLAUDE.md)** 에 있습니다.
 
-| 주차 | 기간 | 주제 | 문서 |
-|---|---|---|---|
-| 1주 | 9/17~9/23 | 입출력 + Python 문법 + 시간복잡도 + 완전탐색 | [00](docs/00-getting-started.md) [01](docs/01-python-cheatsheet.md) [02](docs/02-complexity.md) [구현](docs/topics/01-implementation.md) |
-| 2주 | 9/24~9/30 | 정렬 + 해시 + 스택/큐/힙 | [정렬](docs/topics/02-sorting.md) [해시](docs/topics/03-hash.md) [스택·큐](docs/topics/04-stack-queue.md) |
-| 3주 | 10/1~10/7 | **BFS / DFS** ★ 최대 고비 | [BFS·DFS](docs/topics/05-bfs-dfs.md) |
-| 4주 | 10/8~10/14 | 이분탐색 + 투포인터 + 그리디 | [이분탐색](docs/topics/06-binary-search.md) [투포인터](docs/topics/07-two-pointers.md) [그리디](docs/topics/08-greedy.md) |
-| 5주 | 10/15~10/21 | DP + 다익스트라 | [DP](docs/topics/09-dp.md) [그래프](docs/topics/10-graph-advanced.md) |
-| 마무리 | 10/22~10/23 | 모의고사 + 오답 복습 | [실전 전략](docs/03-exam-day.md) |
+| 단계 | 기간 | 일수 | 주제 | 문서 |
+|---|---|---|---|---|
+| 1 | 9/29~10/2 | 4일 | 입출력 + 시간복잡도 + 완전탐색 | [00](docs/00-getting-started.md) [01](docs/01-python-cheatsheet.md) [02](docs/02-complexity.md) [구현](docs/topics/01-implementation.md) |
+| 2 | 10/3~10/6 | 4일 | 정렬 + 해시 + 스택/큐/힙 | [정렬](docs/topics/02-sorting.md) [해시](docs/topics/03-hash.md) [스택·큐](docs/topics/04-stack-queue.md) |
+| **3** | **10/7~10/14** | **8일** | **BFS / DFS ★ 최우선** | [BFS·DFS](docs/topics/05-bfs-dfs.md) |
+| 4 | 10/15~10/18 | 4일 | 이분탐색 + 투포인터 + 그리디 | [이분탐색](docs/topics/06-binary-search.md) [투포인터](docs/topics/07-two-pointers.md) [그리디](docs/topics/08-greedy.md) |
+| 5 | 10/19~10/22 | 4일 | DP (유형 3개) + 다익스트라 | [DP](docs/topics/09-dp.md) [그래프](docs/topics/10-graph-advanced.md) |
+| 6 | 10/23 | 1일 | 모의고사 + 오답 복습 | [실전 전략](docs/03-exam-day.md) |
 
-> 3주차(BFS/DFS)와 5주차(DP)에서 대부분 무너집니다.
-> 진도가 밀려도 **BFS/DFS는 절대 건너뛰지 마세요.** 출제 빈도 1위입니다.
+> 25일 중 **8일을 BFS/DFS에 씁니다.** 출제 비중이 압도적이라 투자 대비 회수가 가장 큽니다.
+> 일정이 밀리면 DP·그리디를 먼저 자르고, **BFS/DFS는 끝까지 지킵니다.**
 
 ## 2. 어디서 문제를 푸나
 
