@@ -39,6 +39,127 @@
 
 ---
 
+## 배운 도구 (누적) — 복습용 치트
+
+> 문제를 풀다 "이거 어떻게 하지?" 싶을 때 여기부터 찾으세요.
+> 시험 전날(10/23)에는 **이 섹션만** 읽으면 됩니다.
+
+### 📅 Day 1 (9/29)
+
+#### 1. `set` — 중복 제거
+
+**언제**: "중복 없이 모아야 한다", "이미 나온 값인지 확인해야 한다"
+
+```python
+s = set()          # 빈 집합 ★ {}는 빈 dict이므로 주의
+s.add(3)
+s.add(3)           # 중복은 자동 무시 -> {3}
+s.discard(3)       # 삭제 (없어도 에러 안 남)
+3 in s             # O(1) ★ 리스트는 O(n)
+len(s)             # 개수
+```
+
+- **순서가 없다.** 순서/정렬이 필요하면 마지막에 `sorted()`
+- set에는 **불변값만** 넣을 수 있다 → 좌표는 튜플로: `s.add((x, y))` ✅ / `s.add([x, y])` ❌
+- 집합 연산: `a & b`(교집합) `a | b`(합집합) `a - b`(차집합)
+
+> **핵심 감각**: 리스트에 `in`을 쓰고 있으면 → set으로 바꿔라.
+> 효율성 테스트 실패의 절반이 이걸로 해결된다.
+
+#### 2. `sorted()` — 정렬된 **리스트**를 새로 만들기
+
+**언제**: 오름차순으로 return해야 할 때 / set을 리스트로 바꿔야 할 때
+
+```python
+sorted({5, 3, 8})            # [3, 5, 8]  ← set을 넣어도 list가 나옴 ★
+sorted(arr, reverse=True)    # 내림차순
+sorted(arr, key=len)         # 기준을 정해서 정렬
+arr.sort()                   # 원본을 직접 정렬 (반환값은 None!)
+```
+
+- `sorted()` = **새 리스트 반환** / `arr.sort()` = **원본 변경, 반환 없음**
+- ⚠️ `arr = arr.sort()` 하면 `None`이 된다. 자주 하는 실수
+- set + sorted 조합 = **"중복 제거 + 정렬"이 한 번에**
+
+```python
+return sorted(answer_set)    # set -> 정렬된 list. 반환 타입까지 해결 ✅
+```
+
+#### 3. `enumerate()` — 인덱스와 값을 동시에
+
+**언제**: "몇 번째인지"와 "무엇인지"가 **둘 다** 필요할 때
+
+```python
+for i, x in enumerate(arr):          # i=인덱스, x=값
+    ...
+
+for rank, x in enumerate(arr, start=1):   # 1부터 세기
+    ...
+
+list(enumerate(['a','b']))           # [(0,'a'), (1,'b')]  ← 튜플을 만든다
+```
+
+- 값만 필요하면 `for x in arr` 를 쓴다. **인덱스를 안 쓸 거면 enumerate도 쓰지 않는다**
+- 대표 용도: **값의 "위치"를 찾을 때**
+
+```python
+best = max(scores)
+winners = [i for i, s in enumerate(scores) if s == best]   # 최고점자 인덱스 전부
+```
+
+- 2차원에서도: `for i, row in enumerate(board): for j, cell in enumerate(row):`
+
+#### 4. `itertools.combinations` — 조합 뽑기
+
+**언제**: "N개 중 M개를 뽑는 모든 경우" (순서 무관)
+
+```python
+from itertools import combinations, permutations, product
+
+combinations([1,2,3], 2)     # (1,2) (1,3) (2,3)        조합 — 순서 무관
+permutations([1,2,3], 2)     # (1,2)(1,3)(2,1)(2,3)...  순열 — 순서 중요
+product([0,1], repeat=3)     # (0,0,0)(0,0,1)...        중복순열 — 각 칸에 선택지
+```
+
+- `combinations(arr, 2)` = 내가 손으로 짠 `for i: for j in range(i+1, n)` 과 **완전히 같은 것**
+- 어떤 걸 쓸지 고르는 법:
+
+| 상황 | 함수 |
+|---|---|
+| 순서 바꾸면 다른 경우 (123 ≠ 321) | `permutations` |
+| 뽑기만 하면 됨 (123 = 321) | `combinations` |
+| 각 자리에 여러 선택지, 중복 허용 | `product` |
+
+> **주의**: 원리(이중 반복문)를 먼저 손으로 짜본 다음에 쓸 것.
+> `combinations`만 외우면 변형 문제에서 막힌다.
+
+#### 5. 컴프리헨션 (덤)
+
+```python
+[x*2 for x in arr]              # 리스트
+{x*2 for x in arr}              # set    ← 괄호만 바꾸면 됨
+{k: v for k, v in pairs}        # dict
+[x for x in arr if x > 0]       # 조건 필터
+```
+
+---
+
 ## 기록
 
-(여기에 추가하세요)
+### [두 개 뽑아서 더하기](https://school.programmers.co.kr/learn/courses/30/lessons/68644) (Lv.1)
+- 날짜: 2026-09-29 / 유형: 완전탐색(조합)
+- 결과: **스스로 품** ✅ (1트 통과)
+- 판단 근거: 길이 ≤ 100 → O(N²) = 1만 번 → 완전탐색 가능
+- 잘한 것: `j = i+1` 로 시작해서 중복 쌍·자기 자신을 한 번에 배제
+- 배운 것:
+  - `set`에 모으면 중복 제거가 공짜, `sorted()`로 정렬+리스트 변환 동시 해결
+  - `combinations(numbers, 2)` 가 이중 반복문과 같은 일을 함
+  - `return sorted(answer)` — 만든 값은 변수에 재할당 말고 바로 반환
+- 재도전: [ ] 1주 뒤 (10/6)
+
+### [모의고사](https://school.programmers.co.kr/learn/courses/30/lessons/42840) (Lv.1)
+- 날짜: 2026-09-29 / 유형: 완전탐색·구현
+- 결과:
+- 막힌 지점:
+- 배운 것:
+- 재도전: [ ] 3일 뒤   [ ] 1주 뒤
