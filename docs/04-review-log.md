@@ -27,8 +27,10 @@
 
 | 복습일 | 복습할 유형 | 출처 (원래 푼 문제) | 고른 문제 | 결과 |
 |---|---|---|---|---|
-| **10/2 (금)** | 완전탐색·패턴 순환 | 모의고사 (힌트받음) | [삼총사](https://school.programmers.co.kr/learn/courses/30/lessons/131705) | [ ] |
-| **10/2 (금)** | 구현·관찰 | 최소직사각형 | [기사단원의 무기](https://school.programmers.co.kr/learn/courses/30/lessons/136798) | [ ] |
+| **9/30 (수)** | 조합 완전탐색 | 두 개 뽑아서 더하기 | [삼총사](https://school.programmers.co.kr/learn/courses/30/lessons/131705) | [ ] |
+| **9/30 (수)** | 구현·관찰 | 최소직사각형 | [기사단원의 무기](https://school.programmers.co.kr/learn/courses/30/lessons/136798) | [ ] |
+| **10/2 (금)** | 완전탐색·패턴 순환 | 모의고사 (힌트받음) | [실패율](https://school.programmers.co.kr/learn/courses/30/lessons/42889) | [ ] |
+| **10/2 (금)** | 시뮬레이션 | 키패드 누르기 (9/30) | [카드 뭉치](https://school.programmers.co.kr/learn/courses/30/lessons/159994) | [ ] |
 | **10/6 (화)** | 조합 완전탐색 | 두 개 뽑아서 더하기 | [소수 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/12977) | [ ] |
 | **10/6 (화)** | 완전탐색·카운팅 | 모의고사 (2회차) | [실패율](https://school.programmers.co.kr/learn/courses/30/lessons/42889) | [ ] |
 | **10/6 (화)** | 구현·관찰 | 최소직사각형 | [바탕화면 정리](https://school.programmers.co.kr/learn/courses/30/lessons/161990) | [ ] |
