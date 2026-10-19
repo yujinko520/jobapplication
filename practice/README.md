@@ -17,7 +17,7 @@
 | 파일 | 문제 | 배울 것 |
 |---|---|---|
 | `pg_mock_exam.py` | [모의고사](https://school.programmers.co.kr/learn/courses/30/lessons/42840) Lv.1 | 완전탐색 + 나머지 순환 |
-| `pg_game_map_shortest.py` | [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844) Lv.2 | **격자 BFS 최단거리** ★★ |
+| `pg_game_map_shortest.py` | [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844) Lv.2 | **격자 BFS 최단거리** ★★ 🔒 **10/20에 직접 풀기 전까지 열지 말 것** |
 | `pg_gym_clothes.py` | [의상](https://school.programmers.co.kr/learn/courses/30/lessons/42578) Lv.2 | 해시 그룹핑 + 경우의 수 |
 
 **복붙하지 말고 보고 다시 치세요.** 손이 기억해야 시험장에서 나옵니다.
@@ -26,56 +26,70 @@
 
 ## 일자별 신규 문제 체크리스트
 
-**하루 5문제 = 신규 3 + 복습 2.** 아래는 **신규 3문제**만.
-복습 2문제는 [CLAUDE.md §4 복습 풀](../CLAUDE.md)에서 고릅니다.
+> 🚨 **2026-10-19 비상 재정비 (D-5).** 10/6~10/18 13일 공백. 이전 체크리스트는 전부 무효.
+> 남은 학습일은 **10/19~10/23 의 5일**. 하루 **6~8문제**.
+> 각 날의 문제는 **우선순위 순**이다. 시간이 부족하면 **뒤에서부터 버린다.**
 
-### 1단계 (9/29~9/30, 10/5~10/6) 구현·완전탐색
-- **9/29 화** ✅ — [두 개 뽑아서 더하기](https://school.programmers.co.kr/learn/courses/30/lessons/68644) / [모의고사](https://school.programmers.co.kr/learn/courses/30/lessons/42840) / [최소직사각형](https://school.programmers.co.kr/learn/courses/30/lessons/86491)
-- **9/30 수** ✅ — [덧칠하기](https://school.programmers.co.kr/learn/courses/30/lessons/161989) / [키패드 누르기](https://school.programmers.co.kr/learn/courses/30/lessons/67256)★ / [공원 산책](https://school.programmers.co.kr/learn/courses/30/lessons/172928)
-- ~~10/1 ~ 10/4~~ — **공백 4일 (10/5 일정 재정비)**
-- [ ] **10/5 월** — [카펫](https://school.programmers.co.kr/learn/courses/30/lessons/42842) / [소수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/42839)★ / [할인 행사](https://school.programmers.co.kr/learn/courses/30/lessons/131127)
-- [ ] **10/6 화** — [피로도](https://school.programmers.co.kr/learn/courses/30/lessons/87946)★ / [전력망을 둘로 나누기](https://school.programmers.co.kr/learn/courses/30/lessons/86971) / [행렬 테두리 회전하기](https://school.programmers.co.kr/learn/courses/30/lessons/77485)
+### 10/19 (월) — BFS/DFS 1일차 · 재귀 + 덩어리 세기 · **8문제**
 
-### 2단계 (10/7~10/9) 정렬·해시·스택큐·힙 — **3일 압축**
-- [ ] **10/7 수** — [K번째수](https://school.programmers.co.kr/learn/courses/30/lessons/42748) / [완주하지 못한 선수](https://school.programmers.co.kr/learn/courses/30/lessons/42576)★ / [가장 큰 수](https://school.programmers.co.kr/learn/courses/30/lessons/42746)★★
-- [ ] **10/8 목** — [전화번호 목록](https://school.programmers.co.kr/learn/courses/30/lessons/42577)★ / [오픈채팅방](https://school.programmers.co.kr/learn/courses/30/lessons/42888) / [베스트앨범](https://school.programmers.co.kr/learn/courses/30/lessons/42579)★
-- [ ] **10/9 금** — [올바른 괄호](https://school.programmers.co.kr/learn/courses/30/lessons/12909)★ / [기능개발](https://school.programmers.co.kr/learn/courses/30/lessons/42586) / [더 맵게](https://school.programmers.co.kr/learn/courses/30/lessons/42626)★
+- [ ] 1. [타겟 넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165) Lv2★ — DFS 재귀 입문
+- [ ] 2. [네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162) Lv3★ — 탐색 템플릿 첫 적용
+- [ ] 3. [카카오프렌즈 컬러링북](https://school.programmers.co.kr/learn/courses/30/lessons/1829) Lv2 — 격자 flood fill
+- [ ] 4. [무인도 여행](https://school.programmers.co.kr/learn/courses/30/lessons/154540) Lv2★ — flood fill + 합계
+      ↑ **여기까지가 필수선**
+- [ ] 5. [전력망을 둘로 나누기](https://school.programmers.co.kr/learn/courses/30/lessons/86971) Lv2
+- [ ] 6. [거리두기 확인하기](https://school.programmers.co.kr/learn/courses/30/lessons/81302) Lv2
+- [ ] 🔁 7. [피로도](https://school.programmers.co.kr/learn/courses/30/lessons/87946) Lv2 — 복습(백트래킹)
+- [ ] 🔁 8. [소수 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/12977) Lv1 — 복습(조합)
 
-### 3단계 (10/10~10/16) BFS/DFS ★★ **7일 유지**
-- [ ] **10/10 토** 템플릿 — [타겟 넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165)★ / [네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162)★ / [단어 변환](https://school.programmers.co.kr/learn/courses/30/lessons/43163)★
-- [ ] **10/11 일** flood fill — [무인도 여행](https://school.programmers.co.kr/learn/courses/30/lessons/154540)★ / [카카오프렌즈 컬러링북](https://school.programmers.co.kr/learn/courses/30/lessons/1829) / [거리두기 확인하기](https://school.programmers.co.kr/learn/courses/30/lessons/81302)
-- [ ] **10/12 월** ★★ **최대 관문** — [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844)★★ / [미로 탈출](https://school.programmers.co.kr/learn/courses/30/lessons/159993)★ / [리코쳇 로봇](https://school.programmers.co.kr/learn/courses/30/lessons/169199)
-- [ ] **10/13 화** DFS — [여행경로](https://school.programmers.co.kr/learn/courses/30/lessons/43164) / [가장 먼 노드](https://school.programmers.co.kr/learn/courses/30/lessons/49189)★ / [순위](https://school.programmers.co.kr/learn/courses/30/lessons/49191)
-- [ ] **10/14 수** 최단경로 — [배달](https://school.programmers.co.kr/learn/courses/30/lessons/12978)★ / [섬 연결하기](https://school.programmers.co.kr/learn/courses/30/lessons/42861) / [아이템 줍기](https://school.programmers.co.kr/learn/courses/30/lessons/87694)
-- [ ] **10/15 목** 약점 보강일 — **Claude가 그날 지정 (막힌 유형 유사 문제 3개)**
-- [ ] **10/16 금** 복습일 — **신규 없음 · 복습 5 + BFS 템플릿 암기 확인**
+### 10/20 (화) — BFS/DFS 2일차 · 격자 최단거리 ★★
 
-> ⚠️ `pg_game_map_shortest.py`에 10/12 문제 풀이가 있습니다. **그날 직접 풀기 전엔 열지 마세요.**
+- [ ] 1. [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844) Lv2★★ ← **최대 관문**
+- [ ] 2. [미로 탈출](https://school.programmers.co.kr/learn/courses/30/lessons/159993) Lv2★
+- [ ] 3. [리코쳇 로봇](https://school.programmers.co.kr/learn/courses/30/lessons/169199) Lv2
+- [ ] 4. [단어 변환](https://school.programmers.co.kr/learn/courses/30/lessons/43163) Lv3★ — 상태 전이 BFS
+- [ ] 🔁 5. [옹알이(2)](https://school.programmers.co.kr/learn/courses/30/lessons/133499) Lv1 — 복습(구현)
+- [ ] 🔁 6. [실패율](https://school.programmers.co.kr/learn/courses/30/lessons/42889) Lv1 — 복습(완전탐색)
 
-### 4단계 (10/17) 그리디 + 파라메트릭 — **1일 압축**
-- [ ] **10/17 토** — [체육복](https://school.programmers.co.kr/learn/courses/30/lessons/42862)★ / [구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885)★ / [입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238)★★
+### 10/21 (수) — 해시 + 정렬
 
-### 5단계 (10/18~10/19) DP — **2일 압축**
-- [ ] **10/18 일** 1차원 — [피보나치 수](https://school.programmers.co.kr/learn/courses/30/lessons/12945) / [멀리 뛰기](https://school.programmers.co.kr/learn/courses/30/lessons/12914) / [2 x n 타일링](https://school.programmers.co.kr/learn/courses/30/lessons/12900)★
-- [ ] **10/19 월** 2차원 ★ — [땅따먹기](https://school.programmers.co.kr/learn/courses/30/lessons/12913)★★ / [정수 삼각형](https://school.programmers.co.kr/learn/courses/30/lessons/43105)★★ / [등굣길](https://school.programmers.co.kr/learn/courses/30/lessons/42898)★
+- [ ] 1. [완주하지 못한 선수](https://school.programmers.co.kr/learn/courses/30/lessons/42576) Lv1★
+- [ ] 2. [전화번호 목록](https://school.programmers.co.kr/learn/courses/30/lessons/42577) Lv2★
+- [ ] 3. [가장 큰 수](https://school.programmers.co.kr/learn/courses/30/lessons/42746) Lv2★★ — 정렬 `key`
+- [ ] 4. [오픈채팅방](https://school.programmers.co.kr/learn/courses/30/lessons/42888) Lv2
+- [ ] 5. [H-Index](https://school.programmers.co.kr/learn/courses/30/lessons/42747) Lv2
+- [ ] 🔁 6~7. **BFS 2문제** (10/19~10/20 중 안 푼 것) ★
 
-### ✂️ 10/5에 잘라낸 것 — 시간 남을 때만
-투포인터 단독일(징검다리 건너기 · 보석 쇼핑 · 연속 부분 수열) / 예산 · 순위 검색 /
-큰 수 만들기 · 조이스틱 · 단속카메라 / N으로 표현 · 합승 택시 요금 · 퍼즐 조각 채우기 · 경주로 건설 /
-같은 숫자는 싫어 · 폰켓몬 · 문자열 내 마음대로 정렬하기 (너무 쉬워서 생략)
+### 10/22 (목) — 스택·큐·힙 + 그리디 + BFS 복습
 
-### 6단계 (10/20~10/23) 🔴 실전 모의고사 — **타이머 필수, 미리 풀지 말 것**
+- [ ] 1. [올바른 괄호](https://school.programmers.co.kr/learn/courses/30/lessons/12909) Lv2★ — 스택
+- [ ] 2. [기능개발](https://school.programmers.co.kr/learn/courses/30/lessons/42586) Lv2 — 큐
+- [ ] 3. [더 맵게](https://school.programmers.co.kr/learn/courses/30/lessons/42626) Lv2★ — 힙
+- [ ] 4. [체육복](https://school.programmers.co.kr/learn/courses/30/lessons/42862) Lv1★ — 그리디
+- [ ] 5. [구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885) Lv2★ — 그리디 + 투포인터
+- [ ] 🔁 6. **빈 화면에서 BFS 템플릿 타이핑** ★★ ← 이 날의 통과 기준
+- [ ] 🔁 7. BFS/DFS 남은 문제 1개
 
-- [ ] **10/20 화** 1회차 · 2시간 — [신고 결과 받기](https://school.programmers.co.kr/learn/courses/30/lessons/92334) + [문자열 압축](https://school.programmers.co.kr/learn/courses/30/lessons/60057) + [튜플](https://school.programmers.co.kr/learn/courses/30/lessons/64065)
-- [ ] **10/21 수** 2회차 · 2시간 — [주차 요금 계산](https://school.programmers.co.kr/learn/courses/30/lessons/92341) + [캐시](https://school.programmers.co.kr/learn/courses/30/lessons/17680) + [후보키](https://school.programmers.co.kr/learn/courses/30/lessons/42890)
-- [ ] **10/22 목** 3회차 · 2.5시간 — [파일명 정렬](https://school.programmers.co.kr/learn/courses/30/lessons/17686) + [프렌즈4블록](https://school.programmers.co.kr/learn/courses/30/lessons/17679) + [자물쇠와 열쇠](https://school.programmers.co.kr/learn/courses/30/lessons/60059)
-- [ ] **10/23 금** 4회차 · 1시간 — [다트 게임](https://school.programmers.co.kr/learn/courses/30/lessons/17682) + [뉴스 클러스터링](https://school.programmers.co.kr/learn/courses/30/lessons/17677) → 이후 오답노트 정독
+### 10/23 (금) — 모의고사 1회 (2시간) + 복기
 
-**모의고사 규칙**: 타이머 ON · 처음 5분 전체 훑고 순서 정하기 · 검색/힌트 금지 ·
-한 문제 45분 넘으면 넘어가기 · 끝난 뒤에만 채점
+- [ ] 타이머 2시간: 신고 결과 받기(92334) + 문자열 압축(60057) + 튜플(64065)
+- [ ] 복기 1시간 — `docs/04-review-log.md`
+- [ ] `docs/05-exam-final-check.md` **BFS 템플릿 칸 채우기** + 전체 정독
+- [ ] 일찍 자기
 
-**끝나고 1시간 복기가 본론**: 못 푼 이유(유형 인식 실패? 구현 실패?) / 시간 배분 실패 여부
+### 10/24 (토) — 시험 🎯
+
+`docs/05-exam-final-check.md` 한 장만 들고 간다.
 
 ---
 
-> ⚠️ 링크가 404면 Claude에게 알려주세요. 문제 ID를 바로 고칩니다.
+## ❌ 10/19에 버린 것 (안 배우고 시험 본다)
+
+- **DP 전부** (피보나치·멀리뛰기·2×n 타일링·땅따먹기·정수 삼각형·등굣길)
+- **다익스트라 / 최단경로** (배달·섬 연결하기·아이템 줍기)
+- **이분탐색 / 파라메트릭** (입국심사·순위 검색)
+- **Lv.3 DFS** (여행경로·순위·가장 먼 노드)
+- **모의고사 2~4회차** (주차 요금 계산·캐시·후보키·파일명 정렬·프렌즈4블록·자물쇠와 열쇠·다트 게임·뉴스 클러스터링)
+
+> 시험에 DP나 이분탐색이 나오면 **버린다.** 5일에 다 담을 수 없다.
+> 대신 **BFS/DFS + 구현 + 해시/정렬**(출제의 60% 이상)에 전부 쏟는다.
