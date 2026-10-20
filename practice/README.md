@@ -34,17 +34,20 @@
 
 - [ ] 1. [타겟 넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165) Lv2★ — DFS 재귀 입문
 - [ ] 2. [네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162) Lv3★ — 탐색 템플릿 첫 적용
-- [ ] 3. [카카오프렌즈 컬러링북](https://school.programmers.co.kr/learn/courses/30/lessons/1829) Lv2 — 격자 flood fill
-- [ ] 4. [무인도 여행](https://school.programmers.co.kr/learn/courses/30/lessons/154540) Lv2★ — flood fill + 합계
+- [x] ~~3. 카카오프렌즈 컬러링북(1829)~~ — ❌ **Python 미지원(C/Java만). 10/20 제외**
+- [ ] 3. [무인도 여행](https://school.programmers.co.kr/learn/courses/30/lessons/154540) Lv2★ — 격자 flood fill
       ↑ **여기까지가 필수선**
+- [ ] 4. [거리두기 확인하기](https://school.programmers.co.kr/learn/courses/30/lessons/81302) Lv2 — 격자 탐색
 - [ ] 5. [전력망을 둘로 나누기](https://school.programmers.co.kr/learn/courses/30/lessons/86971) Lv2
-- [ ] 6. [거리두기 확인하기](https://school.programmers.co.kr/learn/courses/30/lessons/81302) Lv2
+- [ ] 6. [단어 변환](https://school.programmers.co.kr/learn/courses/30/lessons/43163) Lv3★ — 상태 전이
 - [ ] 🔁 7. [피로도](https://school.programmers.co.kr/learn/courses/30/lessons/87946) Lv2 — 복습(백트래킹)
 - [ ] 🔁 8. [소수 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/12977) Lv1 — 복습(조합)
 
 ### 10/20 (화) — BFS/DFS 2일차 · 격자 최단거리 ★★
 
 - [ ] 1. [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844) Lv2★★ ← **최대 관문**
+      ⚠️ **Python 지원 여부 먼저 확인!** (ID가 4자리 = 구 카카오 세트)
+      미지원이면 → [미로 탈출](https://school.programmers.co.kr/learn/courses/30/lessons/159993) 을 관문으로 삼는다
 - [ ] 2. [미로 탈출](https://school.programmers.co.kr/learn/courses/30/lessons/159993) Lv2★
 - [ ] 3. [리코쳇 로봇](https://school.programmers.co.kr/learn/courses/30/lessons/169199) Lv2
 - [ ] 4. [단어 변환](https://school.programmers.co.kr/learn/courses/30/lessons/43163) Lv3★ — 상태 전이 BFS

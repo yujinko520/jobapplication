@@ -188,10 +188,10 @@ def solution(numbers, target):
 |---|---|---|---|
 | 1 | [타겟 넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165) | Lv2★ | **DFS 재귀 입문.** 10/5 도구 #20(깊이가 변하면 재귀)의 직속 후속 |
 | 2 | [네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162) | Lv3★ | **탐색 템플릿 첫 적용.** 덩어리(연결요소) 개수 세기 |
-| 3 | [카카오프렌즈 컬러링북](https://school.programmers.co.kr/learn/courses/30/lessons/1829) | Lv2 | **격자 flood fill.** 9/30 공원 산책의 좌표 다루기가 그대로 쓰인다 |
-| 4 | [무인도 여행](https://school.programmers.co.kr/learn/courses/30/lessons/154540) | Lv2★ | 격자 flood fill + 덩어리 합계 |
+| 3 | [무인도 여행](https://school.programmers.co.kr/learn/courses/30/lessons/154540) | Lv2★ | **격자 flood fill.** 9/30 공원 산책의 좌표 다루기가 그대로 쓰인다 |
+| 4 | [거리두기 확인하기](https://school.programmers.co.kr/learn/courses/30/lessons/81302) | Lv2 | 격자 탐색 + 거리 제한 |
 | 5 | [전력망을 둘로 나누기](https://school.programmers.co.kr/learn/courses/30/lessons/86971) | Lv2 | 완전탐색 × 그래프 탐색 결합 |
-| 6 | [거리두기 확인하기](https://school.programmers.co.kr/learn/courses/30/lessons/81302) | Lv2 | 격자 탐색 + 거리 제한 (오늘 제일 어려움) |
+| 6 | [단어 변환](https://school.programmers.co.kr/learn/courses/30/lessons/43163) | Lv3★ | 격자가 아닌 **상태 전이** 탐색 (오늘 제일 어려움) |
 | 🔁 7 | [피로도](https://school.programmers.co.kr/learn/courses/30/lessons/87946) | Lv2 | 복습 — 백트래킹 (10/6에 못 한 것) |
 | 🔁 8 | [소수 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/12977) | Lv1 | 복습 — 조합 완전탐색 (삼총사 유형) |
 
@@ -207,8 +207,8 @@ def solution(numbers, target):
 | 1 | [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844) | Lv2★★ | **이 커리큘럼 전체의 관문.** 격자 최단거리의 표준형 |
 | 2 | [미로 탈출](https://school.programmers.co.kr/learn/courses/30/lessons/159993) | Lv2★ | 최단거리 2단 (출발→레버→출구) |
 | 3 | [리코쳇 로봇](https://school.programmers.co.kr/learn/courses/30/lessons/169199) | Lv2 | 한 칸이 아니라 "쭉 미끄러지는" 이동 |
-| 4 | [단어 변환](https://school.programmers.co.kr/learn/courses/30/lessons/43163) | Lv3★ | 격자가 아닌 **상태 전이** BFS |
-| 🔁 5~6 | 10/19 flood fill 유형 중 안 푼 것 | | 복습 |
+| 4 | [무인도 여행](https://school.programmers.co.kr/learn/courses/30/lessons/154540) 또는 10/19 잔여 | Lv2★ | 복습 겸 |
+| 🔁 5~6 | 10/19 유형 중 안 푼 것 | | 복습 |
 
 > **최단거리는 BFS만 가능하고 DFS로는 안 된다.** 그 이유를 설명할 수 있어야 한다.
 > ⚠️ **`practice/pg_game_map_shortest.py`에 1번 문제 풀이가 들어 있다. 직접 풀기 전에 열지 말 것.**
@@ -404,6 +404,21 @@ def solution(numbers, target):
 자물쇠와 열쇠(60059) · 다트 게임(17682) · 뉴스 클러스터링(17677)
 
 > ⚠️ 링크가 404면 Claude에게 알릴 것 — 문제 ID를 바로 고친다.
+
+### 🚨 언어 지원 제한 — 구 「카카오 코드」 세트 (2026-10-20 발견)
+
+**lesson ID가 4자리(1xxx)인 문제는 Python을 지원하지 않을 수 있다.** 2026-10-20에
+「카카오프렌즈 컬러링북」(1829)이 **C / Java만 선택 가능**해서 커리큘럼에서 제외했다.
+
+| ID | 문제 | 상태 |
+|---|---|---|
+| **1829** | 카카오프렌즈 컬러링북 | ❌ **Python 불가 — 제외 확정** |
+| **1844** | 게임 맵 최단거리 | ⚠️ **확인 필요** ← 10/20 최대 관문. 불가면 「미로 탈출」(159993)로 대체 |
+| **1845** | 폰켓몬 | ⚠️ 확인 필요 (해시 복습 풀에 있음) |
+
+> Claude는 `school.programmers.co.kr` 에 접속할 수 없다(egress 차단). **언어 지원 여부는
+> 학습자가 페이지에서 확인해주는 수밖에 없다.** 5자리 ID(4xxxx / 1xxxxx)는 신작이라 안전하다.
+> 문제를 낼 때 **4자리 ID는 우선순위를 낮추고**, 꼭 내야 하면 대체 문제를 같이 제시한다.
 
 ---
 
