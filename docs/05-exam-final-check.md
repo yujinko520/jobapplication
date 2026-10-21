@@ -105,6 +105,9 @@
 | 조건을 처리했는데 반영이 안 된다 | `answer = ...` 가 **아래에서 덮어써졌다** → 그 자리에서 `return` |
 | 빈 입력에서만 틀린다 | `arr[0]`을 초기값으로 썼다 → `0`에서 시작하도록 고친다 |
 | **정사각 격자는 통과, 직사각만 틀린다** | `nx`/`ny` 를 행 수/열 수와 **반대로** 비교했다 |
+| **while 이 한 바퀴도 안 돈다** | 경계 조건이 **빈 범위** (`0 <= nx < 0`) / `dist == 0` 을 `!= 0` 으로 뒤집음 |
+| **최단거리가 항상 -1** | `while q:` 뒤에 `len(q) > 0` 을 검사했다 (항상 거짓) |
+| 거리가 전부 1 | `dist[nx][ny] = 1` 로 썼다 → `dist[x][y] + 1` |
 | 격자 밖을 읽는데 에러가 안 난다 | `maps[-1]` 은 **맨 아랫줄**이다. 경계 검사 필수 |
 
 ### 에러 메시지
@@ -114,6 +117,9 @@
 | `'int' object is not iterable` / `has no len()` / `is not subscriptable` | **정수를 목록처럼 취급**했다. `for i in h:` → `for i in range(h):` |
 | `list indices must be integers, not str` | `for x in 리스트` 는 **원소**를 준다. 인덱스가 필요하면 `enumerate` |
 | `unhashable type: 'list'` | 리스트를 dict 키/set 원소로 썼다 → **튜플**로 |
+| `cannot unpack non-iterable int` | `deque([0,0])` 로 정수를 넣었다 → `deque([(0,0)])` |
+| `not enough values to unpack (expected 2, got 1)` | `q.append([(nx,ny)])` 겉 괄호 과잉 → `q.append((nx,ny))` |
+| `list indices must be integers, not tuple` | `dist[0,0]` → `dist[0][0]` |
 | `TypeError: 'dict' object is not callable` | `d(x)` → `d[x]` |
 | `KeyError: 0` | 집계용 dict를 **원본인 줄 알고 읽었다** (이름을 구분하라) |
 | `UnboundLocalError` | 루프 안에서만 만들어지는 변수를 **루프 밖에서** 썼다 → 그 자리에서 `return` |
@@ -292,14 +298,54 @@ def dfs(i, total):
 
 **방향 개수와는 무관하다.** 네트워크도 갈 곳이 최대 n군데지만 `dfs(x)` 다.
 
-### 🔒 10/20에 채울 자리 — **BFS (큐) 최단거리** ★★★
+### ★★★ BFS 큐 — **최단거리는 이것만**  `[0/2]`  (10/21 작성)
 
-> 최단거리는 **BFS만** 가능. DFS로는 안 된다. `deque` 를 쓰고 **재귀를 안 쓰므로
-> `RecursionError`가 없다.** 10/20 「게임 맵 최단거리」를 풀고 여기 옮겨 적는다.
+```python
+from collections import deque
+
+n, m = len(maps), len(maps[0])
+dist = [[0]*m for _ in range(n)]      # 0 = 안 가봄
+dx, dy = [-1,1,0,0], [0,0,-1,1]
+
+q = deque([(0, 0)])                   # ★ 리스트 안에 튜플
+dist[0][0] = 1                        # 칸 수를 셀 때 1 / 이동 횟수면 0 (+ -1 초기화)
+
+while q:                              # ★ 큐가 비면 자동 종료
+    x, y = q.popleft()                # ★ popleft — pop 쓰면 DFS가 된다
+    for k in range(4):
+        nx, ny = x+dx[k], y+dy[k]
+        if 0 <= nx < n and 0 <= ny < m:                  # 격자 경계 (출발·도착과 무관!)
+            if maps[nx][ny] == 1 and dist[nx][ny] == 0:  # 길 + 안 가봄
+                dist[nx][ny] = dist[x][y] + 1            # ★ 나까지 거리 +1
+                q.append((nx, ny))                       # ★ 넣을 때 바로 표시
+
+return dist[n-1][m-1] if dist[n-1][m-1] != 0 else -1     # ★ 도착칸 (nx,ny 아님!)
+```
+
+**DFS에서 바뀌는 건 두 군데뿐** — `dfs(nx,ny)` → `q.append(...)`, 재귀 → `while q:`.
+`visited`·4방향·경계검사는 그대로. **재귀를 안 쓰니 `setrecursionlimit` 불필요.**
+
+### 🔑 BFS인가 DFS인가 — 시험장 3단 판단
 
 ```
-(10/20 작성)
+1. "최소 / 최단 / 몇 번 만에" 가 있나?   →  예: BFS. 끝.
+2. 골랐다가 되돌려야 하나? (순서·조합)   →  예: DFS 백트래킹
+3. 그냥 다 훑기 (개수·합·연결 여부)      →  둘 다 OK. 격자 크면 BFS
 ```
+
+> **기준 한 줄: 「거리(횟수)가 답에 들어가나?」**
+> DFS = 경로·조합을 **만들어본다** / BFS = **거리를 잰다**
+
+### 여러 구간을 거쳐야 하면 — BFS를 **여러 번**
+
+```python
+a = bfs(start, lever)
+b = bfs(lever, end)
+return a + b if a != -1 and b != -1 else -1     # ★ 양쪽 모두 검사
+```
+
+🔴 `b` 검사를 빼면 뒷구간이 막혔을 때 `a + 0` 이 나간다 (6만 건 중 2,192건 오답).
+**구간마다 `dist`를 새로 만들 것.**
 
 ### 🔒 채울 자리 — 정렬 `key` / 힙 (10/21~10/22)
 
